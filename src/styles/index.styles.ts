@@ -354,6 +354,7 @@ export const ImageComponent = styled('div', {
     }
 
 })
+
 export const ImageContainer = styled('div', {
 
     display: 'flex',
@@ -362,4 +363,57 @@ export const ImageContainer = styled('div', {
     justifyContent: 'center',
 
 })
+
+export const RevisaoContainer = styled('div', {
+
+    maxWidth: 1120,
+    padding: '5rem 0',
+    gap: '4rem',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+
+})
+
+export const RevisaoHeadline = styled('div', {
+
+    background: '#FF0000',
+    width: '56rem',
+    height: '6.25rem',
+    borderRadius: 20,
+    fontWeight: 700,
+    fontSize: 17,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    transition: 'all 300ms ease',
+
+    '&:hover': {
+        transform: 'scale(1.05)',
+    },
+
+})
+
+export const RevisaoImages = styled('div', {
+
+    display: 'flex',
+    gap: '2rem',
+    
+    img: {
+        boxShadow: '30px 30px 36px 0px rgba(0, 0, 0, 0.25)',
+        background: '#ccc',
+        borderRadius: 40,
+        transition: 'all 300ms ease',
+
+        '&:hover': {
+            transform: 'scale(1.05)',
+        },
+    },
+
+})
+
+
 

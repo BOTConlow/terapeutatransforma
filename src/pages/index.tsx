@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import { Be_Vietnam_Pro } from 'next/font/google'
-import { BonusBox, BonusContainer, BonusHeadline, BonusTitle, BoxGuia, BoxGuiaContainer, GuiaContainer, Header, HeaderContainer, Headline, HeadlineContainer, ImageComponent, ImageContainer, MainContainer, Mensage, SecondHeadline, SecondHeadlineContainer, Separator2 } from '@/styles/index.styles'
+import { BonusBox, BonusContainer, BonusHeadline, BonusTitle, BoxGuia, BoxGuiaContainer, GuiaContainer, Header, HeaderContainer, Headline, HeadlineContainer, ImageComponent, ImageContainer, MainContainer, Mensage, RevisaoContainer, RevisaoHeadline, RevisaoImages, SecondHeadline, SecondHeadlineContainer, Separator2 } from '@/styles/index.styles'
 import Backgound1 from '../../public/Background1.svg'
 import Ipad from '../../public/Ipad.png'
 import ColumbiaImg from '../../public/columbia1.png'
 import ColumbiaImg2 from '../../public/columbia2.png'
 import Capa120 from '../../public/capa120.png'
+import Capa10 from '../../public/capa10.png'
+import Iphone from '../../public/iphone.png'
 import Logo1 from '../../public/logo1.svg'
 import Logo2 from '../../public/logo2.svg'
 import Image from 'next/image'
@@ -13,6 +15,9 @@ import Depoimentos from '@/components/Depoimentos'
 import Temas from '@/components/Temas'
 import { Atom, Equalizer } from 'phosphor-react'
 import { Separator } from '@/components/Temas/styles'
+import CheckTeste from '@/components/check'
+import Button from '@/components/button'
+import Desconto from '@/components/desconto'
 
 const Vietnam = Be_Vietnam_Pro({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
@@ -239,11 +244,7 @@ export default function Home() {
             <ImageContainer>
 
               <Image
-                style={{
-                  transform: 'rotate(-25deg)',
-                  zIndex: -1,
-                }}
-                src={Capa120}
+                src={Capa10}
                 alt="Logo"
                 width={470}
                 height={550}
@@ -391,6 +392,39 @@ export default function Home() {
             Veja tudo que você irá receber <span style={{ color: '#00FF96' }}>HOJE:</span>
           </p>
         </Mensage>
+
+        <RevisaoContainer>
+          <RevisaoHeadline>
+            <p>
+              Somente nos dias: <b>25, 26 e 27 de Julho</b> você terá um DESCONTO  de 62% + BÔNUS EXCLUSIVOS
+            </p>
+          </RevisaoHeadline>
+          <RevisaoImages>
+            <Image
+              src={Iphone}
+              alt="Logo"
+              quality={100}
+            />
+            <Image
+              src={Iphone}
+              alt="Logo"
+              quality={100}
+            />
+            <Image
+              src={Iphone}
+              alt="Logo"
+              quality={100}
+            />
+            <Image
+              src={Iphone}
+              alt="Logo"
+              quality={100}
+            />
+          </RevisaoImages>
+
+          <Desconto />
+
+        </RevisaoContainer>
 
       </MainContainer>
     </>

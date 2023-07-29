@@ -25,6 +25,10 @@ export const globalStyles = globalCss({
     },
   },
 
+  button: {
+    cursor: 'pointer',
+  },
+
   'body, input, textarea, button': {
     fontFamily: '$default',
     fontWeight: '400',

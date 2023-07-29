@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BoxTitle, Check, CheckContainer, MolduraRec, Separator, SphereContent, TemasBox, TemasContainer, TemasContent } from "./styles";
+import { BoxTitle, CheckContainer, MolduraRec, Separator, SphereContent, TemasBox, TemasContainer, TemasContent } from "./styles";
 import { CaretDown } from "phosphor-react";
 import Sphere from '../../../public/Sphere.svg'
 import CheckImg from '../../../public/check.svg'
@@ -7,6 +7,7 @@ import Pasta from '../../../public/Pasta.svg'
 import Slider, { Settings } from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CheckTeste from "../check";
 
 
 export default function Temas() {
@@ -58,249 +59,70 @@ export default function Temas() {
 
                         <Slider {...settings}>
 
-                            <div>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Relacionamentos interpessoais,</b> como dificuldades no relacionamento com familiares, amigos ou parceiros românticos;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Ansiedade e estresse,</b> como preocupações excessivas medos e fobias;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Depressão e tristeza,</b> como sentimentos de desânimo, falta de motivação e perda de interesses;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Traumas passados e experiências dolorosas,</b> como abuso, negligência, violência ou acidentes;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Questões de autoestima e autoconfiança,</b>  como baixa autoestima, autocrítica excessiva ou insegurança;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Comportamento autodestrutivos e automutilação,</b> como comportamentos de risco, automutilação ou pensamentos suicidas;
-                                    </p>
-                                </CheckContainer>
+                            <CheckContainer>
+                                <CheckTeste
+                                    desc='<b>Relacionamentos interpessoais,</b> como dificuldades no relacionamento com familiares, amigos ou parceiros românticos;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Ansiedade e estresse,</b> como preocupações excessivas medos e fobias;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Depressão e tristeza,</b> como sentimentos de desânimo, falta de motivação e perda de interesses;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Traumas passados e experiências dolorosas,</b> como abuso, negligência, violência ou acidentes;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Questões de autoestima e autoconfiança,</b>  como baixa autoestima, autocrítica excessiva ou insegurança;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Comportamento autodestrutivos e automutilação,</b> como comportamentos de risco, automutilação ou pensamentos suicidas;'
+                                />
+                            </CheckContainer>
 
-                            </div>
+                            <CheckContainer>
+                                <CheckTeste
+                                    desc='<b>Hábitos de saúde física e mental,</b> como alimentação, exercício físico, uso de álcool ou drogas;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Problemas familiares</b> e dinâmicas familiares disfuncionais, como conflitos entre membros da família, relacionamento com pais ou filhos;'
+                                />
+                                <CheckTeste
+                                    desc='<b>identidade de gênero e orientação sexual,</b> como questões relacionadas à identidade, orientação sexual ou discriminação;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Questões existenciais e de propósito de vida,</b> como busca por sentido, valores pessoais ou religiosidade;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Luto e perda,</b> como a morte de um ente querido, sepração ou mudança;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Habilidades sociais e comunicação interpessoal,</b> como timidez, dificuldades em se relacionar socialmente ou problemas de comunicação'
+                                />
+                            </CheckContainer>
 
-                            <div>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Hábitos de saúde física e mental,</b> como alimentação, exercício físico, uso de álcool ou drogas;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Problemas familiares</b> e dinâmicas familiares disfuncionais, como conflitos entre membros da família, relacionamento com pais ou filhos;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>identidade de gênero e orientação sexual,</b> como questões relacionadas à identidade, orientação sexual ou discriminação;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Questões existenciais e de propósito de vida,</b> como busca por sentido, valores pessoais ou religiosidade;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Luto e perda,</b> como a morte de um ente querido, sepração ou mudança;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Habilidades sociais e comunicação interpessoal,</b> como timidez, dificuldades em se relacionar socialmente ou problemas de comunicação
-                                    </p>
-                                </CheckContainer>
-
-                            </div>
-
-                            <div>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Vícios e dependências,</b> como dependência de substãncias químicas, jogos de azar o tecnologia;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Preocupações financeiras e profissionais,</b> como desemprego, dificuldades financeiras ou conflitos no ambiente de trabalho;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Transtornos alimentares e problemas de imagem corporal,</b> como anorexia, bulimia ou transtorno da compulsão alimentar;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Questões espirituais e religiosas,</b> como busca por sentido espiritual, práticas religiosas ou conflitos com a religião;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Mudanças e transições na vida,</b> como mudanças de emprego, mudança de cidade ou dvórcio;
-                                    </p>
-                                </CheckContainer>
-                                <CheckContainer>
-                                    <Check>
-                                        <Image
-                                            src={CheckImg}
-                                            alt="Pasta"
-                                            quality={100}
-                                        />
-                                    </Check>
-                                    <p>
-                                        <b>Autoconhecimento e desenvolvimento pessoal,</b> como autoconhecimento, autoaceitação e desenvolvimento pessoal;
-                                    </p>
-                                </CheckContainer>
-                            </div>
+                            <CheckContainer>
+                                <CheckTeste
+                                    desc='<b>Vícios e dependências,</b> como dependência de substãncias químicas, jogos de azar o tecnologia;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Preocupações financeiras e profissionais,</b> como desemprego, dificuldades financeiras ou conflitos no ambiente de trabalho;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Transtornos alimentares e problemas de imagem corporal,</b> como anorexia, bulimia ou transtorno da compulsão alimentar;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Questões espirituais e religiosas,</b> como busca por sentido espiritual, práticas religiosas ou conflitos com a religião;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Mudanças e transições na vida,</b> como mudanças de emprego, mudança de cidade ou dvórcio;'
+                                />
+                                <CheckTeste
+                                    desc='<b>Autoconhecimento e desenvolvimento pessoal,</b> como autoconhecimento, autoaceitação e desenvolvimento pessoal;'
+                                />
+                            </CheckContainer>
 
                         </Slider>
-
-
-                        {/* <div>
-
-                                
-
-                            </div>
-
-                            <div>
-
-                                
-                                
-                                
-
-                            </div> */}
 
                     </TemasBox>
 

@@ -32,7 +32,7 @@ export const TemasContent = styled('div', {
 
 export const MolduraRec = styled('div', {
 
-    Width: '46rem',
+    Width: '100%',
     height: '1.5rem',
     background: 'linear-gradient(90deg, #77B0ED, #213989)',
 
@@ -44,9 +44,7 @@ export const MolduraRec = styled('div', {
 
 export const TemasBox = styled('div', {
 
-    padding: '3rem 2rem',
-    margin: '0 auto',
-
+    padding: '3rem 4rem',
 })
 
 export const BoxTitle = styled('div', {
@@ -73,29 +71,6 @@ export const Separator = styled('div', {
 
 export const CheckContainer = styled('div', {
 
-    background: '#e0e0e0',
-    borderRadius: '10px',
-    padding: '.5rem 1rem',
-    gap: '1rem',
-    margin: '2rem 0',
-    display: 'flex',
-    alignItems: 'center',
-
-    p: {
-        width: '100%',
-    }
-
-})
-
-export const Check = styled('div', {
-
-    width: '2.3rem',
-    height: '2.3rem',
-    background: '#60B0D9',
-    borderRadius: '11px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: '3.70px solid #B5B5BA',
+    Width: '46rem',
 
 })
