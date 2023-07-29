@@ -1,11 +1,23 @@
 import Head from 'next/head'
+import { Be_Vietnam_Pro } from 'next/font/google'
+import { BonusBox, BonusContainer, BonusHeadline, BonusTitle, BoxGuia, BoxGuiaContainer, GuiaContainer, Header, HeaderContainer, Headline, HeadlineContainer, ImageComponent, ImageContainer, MainContainer, Mensage, SecondHeadline, SecondHeadlineContainer, Separator2 } from '@/styles/index.styles'
+import Backgound1 from '../../public/Background1.svg'
+import Ipad from '../../public/Ipad.png'
+import ColumbiaImg from '../../public/columbia1.png'
+import ColumbiaImg2 from '../../public/columbia2.png'
+import Capa120 from '../../public/capa120.png'
+import Logo1 from '../../public/logo1.svg'
+import Logo2 from '../../public/logo2.svg'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Depoimentos from '@/components/Depoimentos'
+import Temas from '@/components/Temas'
+import { Atom, Equalizer } from 'phosphor-react'
+import { Separator } from '@/components/Temas/styles'
 
-const inter = Inter({ subsets: ['latin'] })
+const Vietnam = Be_Vietnam_Pro({ subsets: ['latin'], weight: ['400', '500', '600', '700'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -14,101 +26,373 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
+
+      <MainContainer className={Vietnam.className}>
+
+        <Header>
+          <HeaderContainer>
+            <h1>
+              ATENÇÃO: Se você quer melhorar os resultados  que vem tendo<br /> com seus clientes, este conteúdo é para você!
+            </h1>
+          </HeaderContainer>
+        </Header>
+
+        <Headline style={{ backgroundImage: `url(${Backgound1.src})` }}>
+          <HeadlineContainer>
+            <h1>
+              Descubra o segredo para<br /> atendimentos memoráveis:<br /> 482 perguntas poderosas!
+            </h1>
+            <p>
+              Conquiste seus clientes com 482 perguntas inteligentes para um<br /> atendimento excepcional!
+            </p>
+          </HeadlineContainer>
+        </Headline>
+
+        <SecondHeadline>
+          <SecondHeadlineContainer>
+            <Image
+              src={Ipad}
+              alt="capa"
+              quality={100}
+              priority={true}
+            />
+            <p>
+              Ideal para psicólogos, terapeutas, psicanalistas, estudantes e<br /> profissionais da área de saúde.
+            </p>
+          </SecondHeadlineContainer>
+        </SecondHeadline>
+
+        <Mensage color={'frst'}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
+            <u>Aristóteles</u>
           </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
+          <h1>
+            "A sabedoria começa com a dúvida<br /> inteligente, pois é através dela que<br /> encontramos as verdades mais profundas."
+          </h1>
+        </Mensage>
 
-        <div className={styles.center}>
+        <GuiaContainer>
+
           <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
+            src={ColumbiaImg}
+            alt="Columbia University"
+            quality={100}
           />
-        </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
+          <h1>
+            Tenha um guia completo em suas mãos com as perguntas certas para serem usadas em um processo terapêutico.
+          </h1>
 
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
+          <h3>
+            Com essas <b>482 perguntas</b> baseadas em evidências, você poderá intervir casos de violência psicológica, física ou sexual, tentativa de suicídio, depressão, ansiedade e muito mais…
+          </h3>
 
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
+          <BoxGuiaContainer>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+            <BoxGuia>
+              <Image
+                src={Logo1}
+                alt="Logo"
+                quality={100}
+              />
+              <h1>
+                Guia Prático, Didático e Fácil
+              </h1>
+              <p>
+                Todas as perguntas são separadas por temas e ocasiões. Você poderá consultar <span style={{ color: '#60B0D9' }}>sempre</span> que precisar.
+              </p>
+            </BoxGuia>
+
+            <Atom size={80} weight="fill" />
+
+            <BoxGuia>
+              <Image
+                src={Logo2}
+                alt="Logo"
+                quality={100}
+              />
+              <h1>
+                +50 Perguntas focadas em suicídio
+              </h1>
+              <p>
+                Você terá uma linha abrangente de questionamento sobre risco de suicídio.
+              </p>
+            </BoxGuia>
+
+          </BoxGuiaContainer>
+
+        </GuiaContainer>
+
+        <Mensage color={'scnd'}>
+          <p>
+            Todas as perguntas foram cientificamente testadas pela<br /> Columbia University Department of Psychiatry nos EUA.
+          </p>
+          <Image
+            src={ColumbiaImg2}
+            alt="Columbia University"
+            quality={100}
+          />
+        </Mensage>
+
+        <Temas />
+
+        <Mensage color={'thrd'}>
+          <p>
+            Você vai ter acesso ao guia mais avançado do mercado!
+          </p>
+          <h1>
+            + 50 MIL
+          </h1>
+          <p>
+            pessoas já foram ajudadas com esse guia.
+          </p>
+        </Mensage>
+
+        <Depoimentos />
+
+        <Mensage color={'fhrt'}>
+          <p>
+            Adquirindo HOJE, você leva totalmente <span style={{ color: '#00FF96' }}>GRÁTIS:</span>
+          </p>
+        </Mensage>
+
+        <BonusContainer>
+
+          <BonusBox>
+
+            <BonusTitle>
+
+              <BonusHeadline type={'frst'}>
+
+                <Separator2 type={'frst'} color={'frst'} />
+                <h2>
+                  MANFAAT BUKU
+                </h2>
+
+              </BonusHeadline>
+
+              <h1>
+                120 Perguntas Para Crianças e Adolescentes
+              </h1>
+              <p>
+                Acesse 120 perguntas inovadoras e eficientes com o objetivo de estimular o diálogo com os adolescentes, proporcionando um momento de descontração e união.
+              </p>
+              <p>
+                São 120 perguntas para quebrar o gelo no contato inicial com o adolescente. Por meio dessa ferramenta você pode descobrir coisas novas sobre sua vida (família, relacionamentos, escola, amigos e lazer), além de questões que podem ser trabalhadas posteriormente na terapia ou no dia a dia.
+              </p>
+
+            </BonusTitle>
+
+            <ImageContainer>
+
+              <Image
+                src={Capa120}
+                alt="Logo"
+                width={470}
+                height={550}
+                quality={100}
+              />
+
+              <ImageComponent color={'frst'}>
+
+                <div>
+                  <h1>
+                    19
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+
+                <div>
+
+                  <h1>
+                    253
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+
+                <div>
+                  <h1>
+                    60
+                  </h1>
+                  <p>
+                    Hari Menulis
+                  </p>
+                </div>
+
+              </ImageComponent>
+
+            </ImageContainer>
+
+
+          </BonusBox>
+
+          <BonusBox>
+
+            <ImageContainer>
+
+              <Image
+                style={{
+                  transform: 'rotate(-25deg)',
+                  zIndex: -1,
+                }}
+                src={Capa120}
+                alt="Logo"
+                width={470}
+                height={550}
+                quality={100}
+              />
+
+              <ImageComponent color={'scnd'}>
+
+                <div>
+                  <h1>
+                    19
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+
+                <div>
+                  <h1>
+                    253
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+
+                <div>
+                  <h1>
+                    60
+                  </h1>
+                  <p>
+                    Hari Menulis
+                  </p>
+                </div>
+
+              </ImageComponent>
+
+            </ImageContainer>
+
+            <BonusTitle>
+
+              <BonusHeadline type={'scnd'}>
+
+                <Separator2 type={'frst'} color={'scnd'} />
+                <h2>
+                  MANFAAT BUKU
+                </h2>
+
+              </BonusHeadline>
+
+              <h1>
+                10 Recursos Terapêuticos<br /> para Luto
+              </h1>
+              <p>
+                Este é um pacote de recursos terapêuticos, com instrumentos que o ajudarão no manejo do paciente enlutado. Desde a avaliação e triagem até as atividades voltadas para o desenvolvimento do Luto. (Para adolescentes e adultos).
+              </p>
+              <p>
+                Este é um pacote de recursos terapêuticos, com instrumentos que o ajudarão no manejo do paciente enlutado. Desde a avaliação e triagem até as atividades voltadas para o desenvolvimento do Luto. (Para adolescentes e adultos).
+              </p>
+
+            </BonusTitle>
+
+          </BonusBox>
+          <BonusBox>
+
+            <BonusTitle>
+
+              <BonusHeadline type={'thrd'}>
+
+                <Separator2 type={'frst'} color={'thrd'} />
+                <h2>
+                  MANFAAT BUKU
+                </h2>
+
+              </BonusHeadline>
+
+              <h1>
+                Guia De Interpretação Das Respostas
+              </h1>
+              <p>
+                Acesse 120 perguntas inovadoras e eficientes com o objetivo de estimular o diálogo com os adolescentes, proporcionando um momento de descontração e união.
+              </p>
+              <p>
+                São 120 perguntas para quebrar o gelo no contato inicial com o adolescente. Por meio dessa ferramenta você pode descobrir coisas novas sobre sua vida (família, relacionamentos, escola, amigos e lazer), além de questões que podem ser trabalhadas posteriormente na terapia ou no dia a dia.
+              </p>
+
+            </BonusTitle>
+
+            <ImageContainer>
+
+              <Image
+                src={Capa120}
+                alt="Logo"
+                width={470}
+                height={550}
+                quality={100}
+              />
+
+              <ImageComponent color={'thrd'}>
+
+                <div>
+                  <h1>
+                    19
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+
+                <div>
+                  <h1>
+                    253
+                  </h1>
+                  <p>
+                    Juhlah Chapter
+                  </p>
+                </div>
+
+                <Separator2 type={'scnd'} />
+                <div>
+                  <h1>
+                    60
+                  </h1>
+                  <p>
+                    Hari Menulis
+                  </p>
+                </div>
+
+              </ImageComponent>
+
+            </ImageContainer>
+
+          </BonusBox>
+
+        </BonusContainer>
+
+        <Mensage color={'fifth'}>
+          <p>
+            Veja tudo que você irá receber <span style={{ color: '#00FF96' }}>HOJE:</span>
+          </p>
+        </Mensage>
+
+      </MainContainer>
     </>
   )
 }
