@@ -11,7 +11,7 @@ export const DescontoContainer = styled('div', {
 export const BoxCheck = styled('div', {
 
     transition: 'all 100ms ease-in-out',
-    boxShadow: '0px 5px 15px 0px rgba(0, 0, 0, 0.31)',
+    boxShadow: '0px 5px 15px 0px rgba(0, 0, 0, 0.50)',
     borderRadius: 20,
 
     '&:hover': {

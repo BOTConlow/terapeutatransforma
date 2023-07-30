@@ -153,7 +153,7 @@ export const Mensage = styled('div', {
 
             seventh: {
                 color: '#000',
-                padding: '5rem 0',
+                padding: '3rem 0rem 4rem',
                 background: '#FAFAFA',
                 gap: '2rem',
 
@@ -471,14 +471,20 @@ export const LastChance = styled('div', {
 
 export const LastChanceHeadline = styled('div', {
 
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+
     h1: {
         color: '#272D3E',
         fontSize: '3rem',
-        lineHeight: '91%',
+        lineHeight: '110%',
         textAlign: 'center',
     },
 
     p: {
+        width: '12rem',
         borderRadius: 100,
         padding: '0.6rem 1.25rem',
         background: '#C6F4F8',
@@ -488,6 +494,5 @@ export const LastChanceHeadline = styled('div', {
     }
 
 })
-
 
 
