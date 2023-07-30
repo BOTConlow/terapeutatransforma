@@ -61,6 +61,7 @@ export default function Home() {
               alt="capa"
               quality={100}
               priority={true}
+              placeholder="blur"
             />
             <p>
               Ideal para psicólogos, terapeutas, psicanalistas, estudantes e<br /> profissionais da área de saúde.
