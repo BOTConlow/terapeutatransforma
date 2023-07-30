@@ -11,13 +11,7 @@ export const CheckContainer = styled('div', {
     margin: '2rem 0',
     display: 'flex',
     alignItems: 'center',
-    transition: 'all 100ms ease-in-out',
-    boxShadow: '10px 10px 25px 0px rgba(0, 0, 0, 0.31)',
-
-    '&:hover': {
-        transform: 'scale(1.05)',
-    },
-
+    
     p: {
         width: '100%',
     }

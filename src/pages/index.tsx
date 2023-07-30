@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Be_Vietnam_Pro } from 'next/font/google'
-import { BonusBox, BonusContainer, BonusHeadline, BonusTitle, BoxGuia, BoxGuiaContainer, GuiaContainer, Header, HeaderContainer, Headline, HeadlineContainer, ImageComponent, ImageContainer, MainContainer, Mensage, RevisaoContainer, RevisaoHeadline, RevisaoImages, SecondHeadline, SecondHeadlineContainer, Separator2 } from '@/styles/index.styles'
+import { BonusBox, BonusContainer, BonusHeadline, BonusTitle, BoxGuia, BoxGuiaContainer, GuiaContainer, Header, HeaderContainer, Headline, HeadlineContainer, ImageComponent, ImageContainer, LastChance, LastChanceHeadline, MainContainer, Mensage, RevisaoContainer, RevisaoHeadline, RevisaoImages, SecondHeadline, SecondHeadlineContainer, Separator2 } from '@/styles/index.styles'
 import Backgound1 from '../../public/Background1.svg'
 import Ipad from '../../public/Ipad.png'
 import ColumbiaImg from '../../public/columbia1.png'
@@ -10,12 +10,12 @@ import Capa10 from '../../public/capa10.png'
 import Iphone from '../../public/iphone.png'
 import Logo1 from '../../public/logo1.svg'
 import Logo2 from '../../public/logo2.svg'
+import Homem from '../../public/homem.png'
+import WhatsappImg from '../../public/whatsapp.png'
 import Image from 'next/image'
 import Depoimentos from '@/components/Depoimentos'
 import Temas from '@/components/Temas'
-import { Atom, Equalizer } from 'phosphor-react'
-import { Separator } from '@/components/Temas/styles'
-import CheckTeste from '@/components/check'
+import { Atom } from 'phosphor-react'
 import Button from '@/components/button'
 import Desconto from '@/components/desconto'
 
@@ -425,6 +425,56 @@ export default function Home() {
           <Desconto />
 
         </RevisaoContainer>
+
+        <Mensage color={'sixth'}>
+          <Image
+            src={Homem}
+            alt="Logo"
+            quality={100}
+          />
+          <h1>
+            Mas... e se eu não gostar?
+          </h1>
+          <p>
+            O nível de satisfação com este livro é maior que 91%. Então as chances de você ficar insatisfeito são<br /> bem pequenas. Afinal esse livro já foi testado e aprovado por mais de 50 mil profissionais.
+          </p>
+        </Mensage>
+
+        <Mensage color={'seventh'}>
+          <h1>
+            Experimente por 7 dias
+          </h1>
+          <p>
+            Não se preocupe, se o conteúdo descrito aqui não for o mesmo que você receber, você tem 7 dias de<br /> garantia e nós devolvemos seu dinheiro sem burocracia! Basta enviar um e-mail e solicitar a<br /> devolução, sem perguntas ou questionamentos, simples assim.
+          </p>
+        </Mensage>
+
+        <Mensage color={'eighth'}>
+          <h1>
+            Ficou alguma dúvida?
+          </h1>
+          <a href='https://contate.me/terpeutatransforma' target='_blank'>
+            <Image
+              src={WhatsappImg}
+              alt="Logo"
+              width={460}
+              height={200}
+              quality={100}
+            />
+          </a>
+        </Mensage>
+
+        <LastChance>
+          <LastChanceHeadline>
+            <p>
+              ÚLTIMA CHANCE
+            </p>
+            <h1>
+              ÚLTIMOS DIAS PARA VOCÊ APROVEITAR O DESCONTO ESPECIAL + BÔNUS
+            </h1>
+          </LastChanceHeadline>
+          <Desconto />
+        </LastChance>
 
       </MainContainer>
     </>

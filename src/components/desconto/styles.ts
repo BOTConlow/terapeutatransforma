@@ -1,5 +1,26 @@
 import { styled } from "../../styles/stitches.config";
 
+export const DescontoContainer = styled('div', {
+
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2rem',
+
+})
+
+export const BoxCheck = styled('div', {
+
+    transition: 'all 100ms ease-in-out',
+    boxShadow: '0px 5px 15px 0px rgba(0, 0, 0, 0.31)',
+    borderRadius: 20,
+
+    '&:hover': {
+        transform: 'scale(1.05)',
+    },
+
+
+})
+
 export const RevisaoDesconto = styled('div', {
 
     maxWidth: '45rem',

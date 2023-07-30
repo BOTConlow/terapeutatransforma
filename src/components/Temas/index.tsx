@@ -59,7 +59,7 @@ export default function Temas() {
 
                         <Slider {...settings}>
 
-                            <CheckContainer>
+                            <div>
                                 <CheckTeste
                                     desc='<b>Relacionamentos interpessoais,</b> como dificuldades no relacionamento com familiares, amigos ou parceiros românticos;'
                                 />
@@ -78,9 +78,9 @@ export default function Temas() {
                                 <CheckTeste
                                     desc='<b>Comportamento autodestrutivos e automutilação,</b> como comportamentos de risco, automutilação ou pensamentos suicidas;'
                                 />
-                            </CheckContainer>
+                            </div>
 
-                            <CheckContainer>
+                            <div>
                                 <CheckTeste
                                     desc='<b>Hábitos de saúde física e mental,</b> como alimentação, exercício físico, uso de álcool ou drogas;'
                                 />
@@ -99,9 +99,9 @@ export default function Temas() {
                                 <CheckTeste
                                     desc='<b>Habilidades sociais e comunicação interpessoal,</b> como timidez, dificuldades em se relacionar socialmente ou problemas de comunicação'
                                 />
-                            </CheckContainer>
+                            </div>
 
-                            <CheckContainer>
+                            <div>
                                 <CheckTeste
                                     desc='<b>Vícios e dependências,</b> como dependência de substãncias químicas, jogos de azar o tecnologia;'
                                 />
@@ -120,7 +120,7 @@ export default function Temas() {
                                 <CheckTeste
                                     desc='<b>Autoconhecimento e desenvolvimento pessoal,</b> como autoconhecimento, autoaceitação e desenvolvimento pessoal;'
                                 />
-                            </CheckContainer>
+                            </div>
 
                         </Slider>
 

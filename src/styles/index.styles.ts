@@ -135,7 +135,47 @@ export const Mensage = styled('div', {
                 padding: '3.5rem 0',
                 background: '#161528',
                 fontSize: '2.5rem',
-            }
+            },
+
+            sixth: {
+                padding: '3.5rem 0',
+                background: '#60B0D9',
+                gap: '2rem',
+
+                h1: {
+                    fontSize: '3rem',
+                },
+
+                p: {
+                    fontWeight: '500'
+                }
+            },
+
+            seventh: {
+                color: '#000',
+                padding: '5rem 0',
+                background: '#FAFAFA',
+                gap: '2rem',
+
+                h1: {
+                    fontSize: '3rem',
+                },
+
+                p: {
+                    fontWeight: '500'
+                }
+            },
+
+            eighth: {
+                color: '#000',
+                padding: '5rem 0',
+                background: '#EBEBEB',
+                gap: '3rem',
+
+                h1: {
+                    fontSize: '3rem',
+                },
+            },
 
         }
     }
@@ -390,6 +430,7 @@ export const RevisaoHeadline = styled('div', {
     justifyContent: 'center',
     textAlign: 'center',
     transition: 'all 300ms ease',
+    boxShadow: '10px 10px 23px 0px #ad0202',
 
     '&:hover': {
         transform: 'scale(1.05)',
@@ -401,7 +442,7 @@ export const RevisaoImages = styled('div', {
 
     display: 'flex',
     gap: '2rem',
-    
+
     img: {
         boxShadow: '30px 30px 36px 0px rgba(0, 0, 0, 0.25)',
         background: '#ccc',
@@ -412,6 +453,39 @@ export const RevisaoImages = styled('div', {
             transform: 'scale(1.05)',
         },
     },
+
+})
+
+export const LastChance = styled('div', {
+
+    maxWidth: 1120,
+    padding: '5rem 0',
+    gap: '3rem',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    color: '#000',
+
+})
+
+export const LastChanceHeadline = styled('div', {
+
+    h1: {
+        color: '#272D3E',
+        fontSize: '3rem',
+        lineHeight: '91%',
+        textAlign: 'center',
+    },
+
+    p: {
+        borderRadius: 100,
+        padding: '0.6rem 1.25rem',
+        background: '#C6F4F8',
+        color: '#00BAC7',
+        textAlign: 'center',
+        marginBottom: '2rem',
+    }
 
 })
 
