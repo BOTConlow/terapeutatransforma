@@ -21,7 +21,8 @@ export const globalStyles = globalCss({
       backgroundColor: 'rgba(28, 28, 28, 0.332)',
     },
     '&::-webkit-scrollbar-thumb': {
-      background: 'linear-gradient($slat-base, $slat-dark)',
+      background: 'linear-gradient(#557c93, #08203e)',
+      borderRadius: 10,
     },
   },
 
