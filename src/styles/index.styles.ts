@@ -168,7 +168,7 @@ export const Mensage = styled('div', {
 
             eighth: {
                 color: '#000',
-                padding: '5rem 0',
+                padding: '3rem 0 2rem',
                 background: '#EBEBEB',
                 gap: '3rem',
 

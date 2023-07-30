@@ -448,10 +448,10 @@ export default function Home() {
             quality={100}
           />
           <h1>
-            Experimente por 30 dias
+            Você não tem nada a perder!
           </h1>
           <p>
-            Não se preocupe, se o conteúdo descrito aqui não for o mesmo que você receber, você tem 7 dias de<br /> garantia e nós devolvemos seu dinheiro sem burocracia! Basta enviar um e-mail e solicitar a<br /> devolução, sem perguntas ou questionamentos, simples assim.
+            Não se preocupe, compre agora e tenha direito de arrependimento em até 30 dias. se o conteúdo descrito aqui não<br /> for o mesmo que você receber, basta enviar um e-mail para contato@terapeutatransforma.com.br dentro do período de garantia<br /> e cancelamos sua compra, reembolsando 100% do valor pago sem burocracias. Esse é o nosso compromisso com você!
           </p>
         </Mensage>
 
