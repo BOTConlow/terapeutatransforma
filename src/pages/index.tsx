@@ -48,7 +48,7 @@ import Temas from '@/components/Temas'
 import Depoimentos from '@/components/Depoimentos'
 import Footer from '@/components/footer'
 import PopUp from '@/components/PopUp'
-import DescontoFunction from '@/components/Desconto'
+import DescontoFunction from '../components/DescontoFunction'
 
 const Vietnam = Be_Vietnam_Pro({
   subsets: ['latin'],
