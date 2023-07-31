@@ -43,12 +43,12 @@ import Homem from '../../public/homem.png'
 import WhatsappImg from '../../public/whatsapp.png'
 import Image from 'next/image'
 import { Atom } from 'phosphor-react'
-import Desconto from '@/components/Desconto'
 import Faq from '@/components/Faq'
 import Temas from '@/components/Temas'
 import Depoimentos from '@/components/Depoimentos'
 import Footer from '@/components/footer'
 import PopUp from '@/components/PopUp'
+import Desconto from '@/components/Desconto'
 
 const Vietnam = Be_Vietnam_Pro({
   subsets: ['latin'],

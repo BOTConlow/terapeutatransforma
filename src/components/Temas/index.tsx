@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import {
   BoxTitle,
-  CheckContainer,
   MolduraRec,
   Separator,
   SphereContent,
@@ -11,7 +10,6 @@ import {
 } from './styles'
 import { CaretDown } from 'phosphor-react'
 import Sphere from '../../../public/Sphere.svg'
-import CheckImg from '../../../public/check.svg'
 import Pasta from '../../../public/Pasta.svg'
 import Slider, { Settings } from 'react-slick'
 import 'slick-carousel/slick/slick.css'
