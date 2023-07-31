@@ -6,28 +6,7 @@ import Depoimento3 from '../../../public/depoimento3.png'
 import Depoimento4 from '../../../public/depoimento4.png'
 import Depoimento5 from '../../../public/depoimento5.png'
 import Depoimento6 from '../../../public/depoimento6.png'
-import Depoimento7 from '../../../public/depoimento7.png'
 import Slider, { Settings } from 'react-slick'
-
-export function SampleNextArrow(props: {
-  className: any
-  style: any
-  onClick: any
-}) {
-  const { className, style, onClick } = props
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        background: 'black',
-        borderRadius: '10px',
-      }}
-      onClick={onClick}
-    />
-  )
-}
 
 export default function Depoimentos() {
   const settings = {

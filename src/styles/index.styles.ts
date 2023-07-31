@@ -435,12 +435,22 @@ export const LastChanceHeadline = styled('div', {
 
 export const FaqboxContainer = styled('div', {
   width: '100%',
-  padding: '3rem',
+  padding: '4rem',
   display: 'flex',
   justifyContent: 'center',
-  background: 'red',
+  background: 'linear-gradient(90deg, #0F2027, #203A43, #2C5364)',
 })
 
 export const FaqboxContent = styled('div', {
   maxWidth: 1120,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '2.5rem',
+
+  h1: {
+    textShadow: '2px 2px 2px rgba(0, 0, 0, 0.50)',
+    fontSize: '3rem',
+  },
 })

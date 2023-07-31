@@ -1,8 +1,10 @@
 import { ButtonContainer } from './styles'
 
-export default function Button(props: { title: any }) {
-  const { title } = props
+interface ButtonProps {
+  title: string
+}
 
+export default function Button({ title }: ButtonProps) {
   return (
     <>
       <ButtonContainer href="https://pay.kiwify.com.br/rcNH140">

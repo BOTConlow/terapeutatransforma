@@ -5,9 +5,8 @@ import { keyframes } from '@stitches/react'
 
 export const AccordionRoot = styled(Accordion.Root, {
   borderRadius: 6,
-  width: 500,
-  backgroundColor: 'red',
-  boxShadow: `0 2px 10px #000`,
+  width: 700,
+  boxShadow: `0 2px 30px 5px #00000060`,
 })
 
 export const AccordionItem = styled(Accordion.Item, {
@@ -24,12 +23,6 @@ export const AccordionItem = styled(Accordion.Item, {
     borderBottomLeftRadius: 4,
     borderBottomRightRadius: 4,
   },
-
-  '&:focus-within': {
-    position: 'relative',
-    zIndex: 1,
-    boxShadow: `0 0 0 2px #000`,
-  },
 })
 
 export const StyledHeader = styled(Accordion.Header, {
@@ -39,22 +32,21 @@ export const StyledHeader = styled(Accordion.Header, {
 
 export const StyledTrigger = styled(Accordion.Trigger, {
   all: 'unset',
-  backgroundColor: 'transparent',
+  background: '#D7DDE8',
   padding: '0 20px',
-  height: 45,
+  height: 60,
   flex: 1,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   fontSize: '1rem',
   lineHeight: 1,
-  color: '#fff',
-  boxShadow: `0 1px 0 #000`,
-  '&:hover': { backgroundColor: 'blue' },
+  color: '#000',
+  '&:hover': { background: '#c0c6d1' },
 })
 
 export const StyledChevron = styled(CaretDown, {
-  color: '#fff',
+  color: '#000',
   transition: 'transform 300ms cubic-bezier(0.87, 0, 0.13, 1)',
   '[data-state=open] &': { transform: 'rotate(180deg)' },
 })
@@ -72,8 +64,8 @@ export const slideUp = keyframes({
 export const StyledContent = styled(Accordion.Content, {
   overflow: 'hidden',
   fontSize: 15,
-  color: '#000',
-  backgroundColor: '#fff',
+  color: '#fff',
+  backgroundColor: 'transparent',
 
   '&[data-state="open"]': {
     animation: `${slideDown} 300ms cubic-bezier(0.87, 0, 0.13, 1)`,

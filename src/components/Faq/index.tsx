@@ -21,7 +21,7 @@ export default function Faq() {
       <AccordionItem value="item-1">
         <StyledHeader>
           <StyledTrigger>
-            <h1>PARA QUEM SÃO ESSAS FERRAMENTAS?</h1>
+            PARA QUEM SÃO ESSAS FERRAMENTAS?
             <StyledChevron />
           </StyledTrigger>
         </StyledHeader>
@@ -37,7 +37,7 @@ export default function Faq() {
       <AccordionItem value="item-2">
         <StyledHeader>
           <StyledTrigger>
-            <h1>FAÇO TERAPIA, ESSE PRODUTO PODE ME AJUDAR?</h1>
+            FAÇO TERAPIA, ESSE PRODUTO PODE ME AJUDAR?
             <StyledChevron />
           </StyledTrigger>
         </StyledHeader>
@@ -53,7 +53,7 @@ export default function Faq() {
       <AccordionItem value="item-3">
         <StyledHeader>
           <StyledTrigger>
-            <h1>COMO RECEBEREI AO MATERIAL?</h1>
+            COMO RECEBEREI AO MATERIAL?
             <StyledChevron />
           </StyledTrigger>
         </StyledHeader>
@@ -71,7 +71,7 @@ export default function Faq() {
       <AccordionItem value="item-4">
         <StyledHeader>
           <StyledTrigger>
-            <h1>POR QUANTO TEMPO TEREI ACESSO AS FERRAMENTAS?</h1>
+            POR QUANTO TEMPO TEREI ACESSO AS FERRAMENTAS?
             <StyledChevron />
           </StyledTrigger>
         </StyledHeader>
@@ -89,7 +89,7 @@ export default function Faq() {
       <AccordionItem value="item-5">
         <StyledHeader>
           <StyledTrigger>
-            <h1>COMO FUNCIONA?</h1>
+            COMO FUNCIONA?
             <StyledChevron />
           </StyledTrigger>
         </StyledHeader>

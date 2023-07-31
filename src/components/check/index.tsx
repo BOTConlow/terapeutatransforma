@@ -2,9 +2,11 @@ import Image from 'next/image'
 import CheckImg from '../../../public/check.svg'
 import { CheckContainer, CheckContent } from './styles'
 
-export default function CheckTeste(props: { desc: any }) {
-  const { desc } = props
+interface ButtonProps {
+  desc: string
+}
 
+export default function CheckTeste({ desc }: ButtonProps) {
   return (
     <>
       <CheckContainer>

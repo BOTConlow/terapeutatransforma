@@ -43,14 +43,16 @@ import Homem from '../../public/homem.png'
 import WhatsappImg from '../../public/whatsapp.png'
 import Image from 'next/image'
 import { Atom } from 'phosphor-react'
-import Desconto from '@/components/desconto'
+import Desconto from '@/components/Desconto'
 import Faq from '@/components/Faq'
 import Temas from '@/components/Temas'
 import Depoimentos from '@/components/Depoimentos'
+import Footer from '@/components/footer'
+import PopUp from '@/components/PopUp'
 
 const Vietnam = Be_Vietnam_Pro({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['200', '300', '400', '500', '600', '700'],
 })
 
 export default function Home() {
@@ -64,6 +66,8 @@ export default function Home() {
       </Head>
 
       <MainContainer className={Vietnam.className}>
+        <PopUp />
+
         <Header>
           <HeaderContainer>
             <h1>
@@ -424,6 +428,8 @@ export default function Home() {
             <Faq />
           </FaqboxContent>
         </FaqboxContainer>
+
+        <Footer />
       </MainContainer>
     </>
   )
