@@ -8,7 +8,7 @@ import {
   RevisaoHeadline,
 } from './styles'
 
-export default function Desconto() {
+export default function DescontoFunction() {
   return (
     <>
       <DescontoContainer>

@@ -48,7 +48,7 @@ import Temas from '@/components/Temas'
 import Depoimentos from '@/components/Depoimentos'
 import Footer from '@/components/footer'
 import PopUp from '@/components/PopUp'
-import Desconto from '@/components/Desconto'
+import DescontoFunction from '@/components/Desconto'
 
 const Vietnam = Be_Vietnam_Pro({
   subsets: ['latin'],
@@ -367,7 +367,7 @@ export default function Home() {
             <Image src={Iphone} alt="Logo" quality={100} />
           </RevisaoImages>
 
-          <Desconto />
+          <DescontoFunction />
         </RevisaoContainer>
 
         <Mensage color={'sixth'}>
@@ -419,7 +419,7 @@ export default function Home() {
             </h1>
           </LastChanceHeadline>
 
-          <Desconto />
+          <DescontoFunction />
         </LastChance>
 
         <FaqboxContainer>
