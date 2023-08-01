@@ -20,8 +20,8 @@ export default function Footer() {
             <Image src={Logo} alt="capa" quality={100} />
             <FirstContent>
               <p>Links Úteis</p>
-              <a href="www.youtube.com">Políticas de Privacidade</a>
-              <a href="www.youtube.com">Termos de Uso</a>
+              <a href="/termos-de-uso">Políticas de Privacidade</a>
+              <a href="/termos-de-uso">Termos de Uso</a>
             </FirstContent>
             <FirstContent>
               <p>Contato e Suporte</p>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Google from '../../../public/google.png'
+import Google from '../../../public/google.webp'
 import {
   PopUpAcessories,
   PopUpContainer,

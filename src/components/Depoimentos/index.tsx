@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import { DepoimentosContainer, ImageSecion } from './styles'
-import Depoimento1 from '../../../public/depoimento1.png'
-import Depoimento2 from '../../../public/depoimento2.png'
-import Depoimento3 from '../../../public/depoimento3.png'
-import Depoimento4 from '../../../public/depoimento4.png'
-import Depoimento5 from '../../../public/depoimento5.png'
-import Depoimento6 from '../../../public/depoimento6.png'
+import Depoimento1 from '../../../public/depoimento1.webp'
+import Depoimento2 from '../../../public/depoimento2.webp'
+import Depoimento3 from '../../../public/depoimento3.webp'
+import Depoimento4 from '../../../public/depoimento4.webp'
+import Depoimento5 from '../../../public/depoimento5.webp'
+import Depoimento6 from '../../../public/depoimento6.webp'
 import Slider, { Settings } from 'react-slick'
 
 export default function Depoimentos() {
