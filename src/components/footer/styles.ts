@@ -7,6 +7,10 @@ export const FooterContainer = styled('footer', {
   justifyContent: 'center',
   alignItems: 'center',
   padding: '4rem 0',
+
+  '@media (max-width: 768px)': {
+    padding: '3rem 1rem',
+  },
 })
 
 export const FooterContent = styled('div', {
@@ -20,7 +24,15 @@ export const FooterContent = styled('div', {
 
 export const FooterFirst = styled('div', {
   display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
   gap: '4rem',
+
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    textAlign: 'center',
+    gap: '3rem',
+  },
 })
 
 export const FirstContent = styled('div', {

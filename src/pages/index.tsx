@@ -418,22 +418,18 @@ export default function Home() {
           </Mensage>
         </MensageContainer>
 
-        <Mensage color={'eighth'}>
-          <h1>Ficou alguma dúvida?</h1>
-          <a
-            href="https://contate.me/terpeutatransforma"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src={WhatsappImg}
-              alt="Logo"
-              width={460}
-              height={170}
-              quality={100}
-            />
-          </a>
-        </Mensage>
+        <MensageContainer background={'eighth'}>
+          <Mensage type={'eighth'}>
+            <h1>Ficou alguma dúvida?</h1>
+            <a
+              href="https://contate.me/terpeutatransforma"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={WhatsappImg} alt="Logo" quality={100} />
+            </a>
+          </Mensage>
+        </MensageContainer>
 
         <LastChance>
           <LastChanceHeadline>

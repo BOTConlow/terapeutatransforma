@@ -7,6 +7,10 @@ export const AccordionRoot = styled(Accordion.Root, {
   borderRadius: 6,
   width: 700,
   boxShadow: `0 2px 30px 5px #00000060`,
+
+  '@media (max-width: 768px)': {
+    width: '100%',
+  },
 })
 
 export const AccordionItem = styled(Accordion.Item, {

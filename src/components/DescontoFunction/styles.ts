@@ -4,6 +4,10 @@ export const DescontoContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '2rem',
+
+  '@media (max-width: 768px)': {
+    gap: '0',
+  },
 })
 
 export const BoxCheck = styled('div', {

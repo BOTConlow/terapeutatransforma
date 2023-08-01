@@ -300,8 +300,26 @@ export const Mensage = styled('div', {
         padding: '3rem 0 2rem',
         gap: '3rem',
 
+        '@media (max-width: 768px)': {
+          gap: '1rem',
+        },
+
+        img: {
+          width: 460,
+          height: 170,
+
+          '@media (max-width: 768px)': {
+            width: '16rem',
+            height: '8rem',
+          },
+        },
+
         h1: {
           fontSize: '3rem',
+
+          '@media (max-width: 768px)': {
+            fontSize: '1.8rem',
+          },
         },
       },
     },
@@ -655,6 +673,11 @@ export const LastChance = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   color: '#000',
+
+  '@media (max-width: 768px)': {
+    padding: '2rem 1rem',
+    gap: '1rem',
+  },
 })
 
 export const LastChanceHeadline = styled('div', {
@@ -668,6 +691,10 @@ export const LastChanceHeadline = styled('div', {
     fontSize: '3rem',
     lineHeight: '110%',
     textAlign: 'center',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.5rem',
+    },
   },
 
   p: {
@@ -683,7 +710,7 @@ export const LastChanceHeadline = styled('div', {
 
 export const FaqboxContainer = styled('div', {
   width: '100%',
-  padding: '4rem',
+  padding: '4rem 1rem',
   display: 'flex',
   justifyContent: 'center',
   background: 'linear-gradient(90deg, #0F2027, #203A43, #2C5364)',
@@ -700,5 +727,10 @@ export const FaqboxContent = styled('div', {
   h1: {
     textShadow: '2px 2px 2px rgba(0, 0, 0, 0.50)',
     fontSize: '3rem',
+    textAlign: 'center',
+
+    '@media (max-width: 768px)': {
+      fontSize: '2.5rem',
+    },
   },
 })
