@@ -9,7 +9,7 @@ import {
   TemasContent,
 } from './styles'
 import { CaretDown } from 'phosphor-react'
-import Sphere from '../../../public/Sphere.svg'
+import Sphere from '../../../public/Sphere.webp'
 import Pasta from '../../../public/Pasta.svg'
 import Slider, { Settings } from 'react-slick'
 import 'slick-carousel/slick/slick.css'
