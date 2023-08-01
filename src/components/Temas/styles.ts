@@ -1,7 +1,7 @@
 import { styled } from '../../styles/stitches.config'
 
 export const TemasContainer = styled('div', {
-  maxWidth: '1120px',
+  maxWidth: '100vw',
   padding: '4rem 1rem',
   display: 'flex',
   flexDirection: 'column',
@@ -43,7 +43,7 @@ export const TemasContent = styled('div', {
   boxShadow: '0px 0px 29px 0px rgba(0,0,0,0.75)',
 
   '@media (max-width: 768px)': {
-    width: '100vw',
+    width: '100%',
   },
 })
 

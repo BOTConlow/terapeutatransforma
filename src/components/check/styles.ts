@@ -5,7 +5,7 @@ export const CheckContainer = styled('div', {
   background: '#e0e0e0',
   color: '#000',
   borderRadius: '10px',
-  padding: '.5rem 1rem',
+  padding: '1rem',
   gap: '1rem',
   margin: '2rem 0',
   display: 'flex',
