@@ -33,7 +33,7 @@ import {
   Separator2,
 } from '@/styles/index.styles'
 import Backgound1 from '../../public/Background1.svg'
-import Ipad from '../../public/Ipad.png'
+import Ipad from '../../public/Ipad.webp'
 import ColumbiaImg from '../../public/columbia1.png'
 import ColumbiaImg2 from '../../public/columbia2.png'
 import Capa120 from '../../public/capa120.png'
