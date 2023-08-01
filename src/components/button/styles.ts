@@ -12,6 +12,11 @@ export const ButtonContainer = styled('a', {
     padding: '1rem 5rem',
     transition: 'all 300ms ease-in-out',
 
+    '@media (max-width: 768px)': {
+      fontSize: '1.5rem',
+      padding: '1rem 2rem',
+    },
+
     '&:hover': {
       transform: 'scale(1.05)',
     },

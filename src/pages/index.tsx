@@ -5,6 +5,7 @@ import { Be_Vietnam_Pro } from 'next/font/google'
 import {
   BonusBox,
   BonusContainer,
+  BonusDesc,
   BonusHeadline,
   BonusTitle,
   BoxGuia,
@@ -12,6 +13,7 @@ import {
   FaqboxContainer,
   FaqboxContent,
   GuiaContainer,
+  GuiaContent,
   Header,
   HeaderContainer,
   Headline,
@@ -22,6 +24,7 @@ import {
   LastChanceHeadline,
   MainContainer,
   Mensage,
+  MensageContainer,
   RevisaoContainer,
   RevisaoHeadline,
   RevisaoImages,
@@ -49,10 +52,34 @@ import Depoimentos from '@/components/Depoimentos'
 import Footer from '@/components/footer'
 import PopUp from '@/components/PopUp'
 import DescontoFunction from '../components/DescontoFunction'
+import { format } from 'date-fns'
+import { utcToZonedTime } from 'date-fns-tz'
+import ptBR from 'date-fns/locale/pt-BR' // Importe o idioma para português brasileiro
 
 const Vietnam = Be_Vietnam_Pro({
   subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700'],
+})
+
+// Obtenha a data atual
+const currentDate = new Date()
+
+// Obtenha as datas dos dois dias anteriores
+const twoDaysAgo = utcToZonedTime(currentDate, 'America/Sao_Paulo')
+twoDaysAgo.setDate(currentDate.getDate() - 2)
+
+const oneDayAgo = utcToZonedTime(currentDate, 'America/Sao_Paulo')
+oneDayAgo.setDate(currentDate.getDate() - 1)
+
+// Formate as datas para exibir apenas o dia e o mês em português
+const currentFormatted = format(currentDate, "dd 'de' MMMM", {
+  locale: ptBR,
+})
+const twoDaysAgoFormatted = format(twoDaysAgo, 'dd', {
+  locale: ptBR,
+})
+const oneDayAgoFormatted = format(oneDayAgo, ' dd', {
+  locale: ptBR,
 })
 
 export default function Home() {
@@ -71,8 +98,8 @@ export default function Home() {
         <Header>
           <HeaderContainer>
             <h1>
-              ATENÇÃO: Se você quer melhorar os resultados que vem tendo
-              <br /> com seus clientes, este conteúdo é para você!
+              ATENÇÃO: Se você quer melhorar os resultados que vem tendo com
+              seus clientes, este conteúdo é para você!
             </h1>
           </HeaderContainer>
         </Header>
@@ -80,13 +107,12 @@ export default function Home() {
         <Headline style={{ backgroundImage: `url(${Backgound1.src})` }}>
           <HeadlineContainer>
             <h1>
-              Descubra o segredo para
-              <br /> atendimentos memoráveis:
-              <br /> 512 perguntas poderosas!
+              Descubra o segredo para atendimentos memoráveis: 512 perguntas
+              poderosas!
             </h1>
             <p>
               Conquiste seus clientes com 512 perguntas inteligentes para um
-              <br /> atendimento excepcional!
+              atendimento excepcional!
             </p>
           </HeadlineContainer>
         </Headline>
@@ -107,30 +133,33 @@ export default function Home() {
           </SecondHeadlineContainer>
         </SecondHeadline>
 
-        <Mensage color={'frst'}>
-          <p>
-            <u>Aristóteles</u>
-          </p>
-          <h1>
-            "A sabedoria começa com a dúvida
-            <br /> inteligente, pois é através dela que
-            <br /> encontramos as verdades mais profundas."
-          </h1>
-        </Mensage>
+        <MensageContainer background={'first'}>
+          <Mensage type={'first'}>
+            <p>
+              <u>Aristóteles</u>
+            </p>
+            <h1>
+              "A sabedoria começa com a dúvida inteligente, pois é através dela
+              que encontramos as verdades mais profundas."
+            </h1>
+          </Mensage>
+        </MensageContainer>
 
         <GuiaContainer>
-          <Image src={ColumbiaImg} alt="Columbia University" quality={100} />
+          <GuiaContent>
+            <Image src={ColumbiaImg} alt="Columbia University" quality={100} />
 
-          <h1>
-            Tenha um guia completo em suas mãos com as perguntas certas para
-            serem usadas em um processo terapêutico.
-          </h1>
+            <h1>
+              Tenha um guia completo em suas mãos com as perguntas certas para
+              serem usadas em um processo terapêutico.
+            </h1>
 
-          <h3>
-            Com essas <b>512 perguntas</b> baseadas em evidências, você poderá
-            intervir casos de violência psicológica, física ou sexual, tentativa
-            de suicídio, depressão, ansiedade e muito mais…
-          </h3>
+            <h3>
+              Com essas <b>512 perguntas</b> baseadas em evidências, você poderá
+              intervir casos de violência psicológica, física ou sexual,
+              tentativa de suicídio, depressão, ansiedade e muito mais…
+            </h3>
+          </GuiaContent>
 
           <BoxGuiaContainer>
             <BoxGuia>
@@ -156,30 +185,36 @@ export default function Home() {
           </BoxGuiaContainer>
         </GuiaContainer>
 
-        <Mensage color={'scnd'}>
-          <p>
-            Todas as perguntas foram cientificamente testadas pela
-            <br /> Columbia University Department of Psychiatry nos EUA.
-          </p>
-          <Image src={ColumbiaImg2} alt="Columbia University" quality={100} />
-        </Mensage>
+        <MensageContainer background={'scnd'}>
+          <Mensage type={'scnd'}>
+            <p>
+              Todas as perguntas foram cientificamente testadas pela
+              <br /> Columbia University Department of Psychiatry nos EUA.
+            </p>
+            <Image src={ColumbiaImg2} alt="Columbia University" quality={100} />
+          </Mensage>
+        </MensageContainer>
 
         <Temas />
 
-        <Mensage color={'thrd'}>
-          <p>Você vai ter acesso ao guia mais avançado do mercado!</p>
-          <h1>+ 50 MIL</h1>
-          <p>pessoas já foram ajudadas com esse guia.</p>
-        </Mensage>
+        <MensageContainer background={'thrd'}>
+          <Mensage type={'thrd'}>
+            <p>Você vai ter acesso ao guia mais avançado do mercado!</p>
+            <h1>+ 50 MIL</h1>
+            <p>pessoas já foram ajudadas com esse guia.</p>
+          </Mensage>
+        </MensageContainer>
 
         <Depoimentos />
 
-        <Mensage color={'fhrt'}>
-          <p>
-            Adquirindo HOJE, você leva totalmente{' '}
-            <span style={{ color: '#00FF96' }}>GRÁTIS:</span>
-          </p>
-        </Mensage>
+        <MensageContainer background={'fhrt'}>
+          <Mensage type={'fhrt'}>
+            <p>
+              Adquirindo HOJE, você leva totalmente{' '}
+              <span style={{ color: '#00FF96' }}>GRÁTIS:</span>
+            </p>
+          </Mensage>
+        </MensageContainer>
 
         <BonusContainer>
           <BonusBox>
@@ -188,30 +223,25 @@ export default function Home() {
                 <Separator2 type={'frst'} color={'frst'} />
                 <h2>MANFAAT BUKU</h2>
               </BonusHeadline>
-
-              <h1>120 Perguntas Para Crianças e Adolescentes</h1>
-              <p>
-                Acesse 120 perguntas inovadoras e eficientes com o objetivo de
-                estimular o diálogo com os adolescentes, proporcionando um
-                momento de descontração e união.
-              </p>
-              <p>
-                São 120 perguntas para quebrar o gelo no contato inicial com o
-                adolescente. Por meio dessa ferramenta você pode descobrir
-                coisas novas sobre sua vida (família, relacionamentos, escola,
-                amigos e lazer), além de questões que podem ser trabalhadas
-                posteriormente na terapia ou no dia a dia.
-              </p>
+              <BonusDesc>
+                <h1>120 Perguntas Para Crianças e Adolescentes</h1>
+                <p>
+                  Acesse 120 perguntas inovadoras e eficientes com o objetivo de
+                  estimular o diálogo com os adolescentes, proporcionando um
+                  momento de descontração e união.
+                </p>
+                <p>
+                  São 120 perguntas para quebrar o gelo no contato inicial com o
+                  adolescente. Por meio dessa ferramenta você pode descobrir
+                  coisas novas sobre sua vida (família, relacionamentos, escola,
+                  amigos e lazer), além de questões que podem ser trabalhadas
+                  posteriormente na terapia ou no dia a dia.
+                </p>
+              </BonusDesc>
             </BonusTitle>
 
             <ImageContainer>
-              <Image
-                src={Capa120}
-                alt="Logo"
-                width={470}
-                height={550}
-                quality={100}
-              />
+              <Image src={Capa120} alt="Logo" quality={100} />
 
               <ImageComponent color={'frst'}>
                 <div>
@@ -236,15 +266,9 @@ export default function Home() {
             </ImageContainer>
           </BonusBox>
 
-          <BonusBox>
+          <BonusBox type="normal">
             <ImageContainer>
-              <Image
-                src={Capa10}
-                alt="Logo"
-                width={470}
-                height={550}
-                quality={100}
-              />
+              <Image src={Capa10} alt="Logo" quality={100} />
 
               <ImageComponent color={'scnd'}>
                 <div>
@@ -274,22 +298,24 @@ export default function Home() {
                 <h2>MANFAAT BUKU</h2>
               </BonusHeadline>
 
-              <h1>
-                10 Recursos Terapêuticos
-                <br /> para Luto
-              </h1>
-              <p>
-                Este é um pacote de recursos terapêuticos, com instrumentos que
-                o ajudarão no manejo do paciente enlutado. Desde a avaliação e
-                triagem até as atividades voltadas para o desenvolvimento do
-                Luto. (Para adolescentes e adultos).
-              </p>
-              <p>
-                Este é um pacote de recursos terapêuticos, com instrumentos que
-                o ajudarão no manejo do paciente enlutado. Desde a avaliação e
-                triagem até as atividades voltadas para o desenvolvimento do
-                Luto. (Para adolescentes e adultos).
-              </p>
+              <BonusDesc>
+                <h1>
+                  10 Recursos Terapêuticos
+                  <br /> para Luto
+                </h1>
+                <p>
+                  Este é um pacote de recursos terapêuticos, com instrumentos
+                  que o ajudarão no manejo do paciente enlutado. Desde a
+                  avaliação e triagem até as atividades voltadas para o
+                  desenvolvimento do Luto. (Para adolescentes e adultos).
+                </p>
+                <p>
+                  Este é um pacote de recursos terapêuticos, com instrumentos
+                  que o ajudarão no manejo do paciente enlutado. Desde a
+                  avaliação e triagem até as atividades voltadas para o
+                  desenvolvimento do Luto. (Para adolescentes e adultos).
+                </p>
+              </BonusDesc>
             </BonusTitle>
           </BonusBox>
           <BonusBox>
@@ -299,29 +325,25 @@ export default function Home() {
                 <h2>MANFAAT BUKU</h2>
               </BonusHeadline>
 
-              <h1>Guia De Interpretação Das Respostas</h1>
-              <p>
-                Acesse 120 perguntas inovadoras e eficientes com o objetivo de
-                estimular o diálogo com os adolescentes, proporcionando um
-                momento de descontração e união.
-              </p>
-              <p>
-                São 120 perguntas para quebrar o gelo no contato inicial com o
-                adolescente. Por meio dessa ferramenta você pode descobrir
-                coisas novas sobre sua vida (família, relacionamentos, escola,
-                amigos e lazer), além de questões que podem ser trabalhadas
-                posteriormente na terapia ou no dia a dia.
-              </p>
+              <BonusDesc>
+                <h1>Guia De Interpretação Das Respostas</h1>
+                <p>
+                  Acesse 120 perguntas inovadoras e eficientes com o objetivo de
+                  estimular o diálogo com os adolescentes, proporcionando um
+                  momento de descontração e união.
+                </p>
+                <p>
+                  São 120 perguntas para quebrar o gelo no contato inicial com o
+                  adolescente. Por meio dessa ferramenta você pode descobrir
+                  coisas novas sobre sua vida (família, relacionamentos, escola,
+                  amigos e lazer), além de questões que podem ser trabalhadas
+                  posteriormente na terapia ou no dia a dia.
+                </p>
+              </BonusDesc>
             </BonusTitle>
 
             <ImageContainer>
-              <Image
-                src={Capa120}
-                alt="Logo"
-                width={470}
-                height={550}
-                quality={100}
-              />
+              <Image src={Capa120} alt="Logo" quality={100} />
 
               <ImageComponent color={'thrd'}>
                 <div>
@@ -346,24 +368,23 @@ export default function Home() {
           </BonusBox>
         </BonusContainer>
 
-        <Mensage color={'fifth'}>
-          <p>
-            Veja tudo que você irá receber{' '}
-            <span style={{ color: '#00FF96' }}>HOJE:</span>
-          </p>
-        </Mensage>
+        <MensageContainer background={'fifth'}>
+          <Mensage type={'fifth'}>
+            <p>
+              Veja tudo que você irá receber{' '}
+              <span style={{ color: '#00FF96' }}>HOJE:</span>
+            </p>
+          </Mensage>
+        </MensageContainer>
 
         <RevisaoContainer>
           <RevisaoHeadline>
             <p>
-              Somente nos dias: <b>25, 26 e 27 de Julho</b> você terá um
-              DESCONTO de 62% + BÔNUS EXCLUSIVOS
+              Somente nos dias {twoDaysAgoFormatted}, {oneDayAgoFormatted} e{' '}
+              {currentFormatted} você terá um DESCONTO de 62% + BÔNUS EXCLUSIVOS
             </p>
           </RevisaoHeadline>
           <RevisaoImages>
-            <Image src={Iphone} alt="Logo" quality={100} />
-            <Image src={Iphone} alt="Logo" quality={100} />
-            <Image src={Iphone} alt="Logo" quality={100} />
             <Image src={Iphone} alt="Logo" quality={100} />
           </RevisaoImages>
 

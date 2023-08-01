@@ -2,29 +2,52 @@ import { styled } from '../../styles/stitches.config'
 
 export const TemasContainer = styled('div', {
   maxWidth: '1120px',
-  padding: '4rem 0',
+  padding: '4rem 1rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   color: '#000',
-  gap: '5rem',
+  gap: '4rem',
+
+  '@media (max-width: 768px)': {
+    padding: '3rem 1rem',
+    gap: '3rem',
+  },
 })
 
 export const SphereContent = styled('div', {
-  gap: '1.5rem',
+  gap: '2rem',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+
+  h1: {
+    '@media (max-width: 768px)': {
+      fontSize: '1.5rem',
+    },
+  },
+
+  '@media (max-width: 768px)': {
+    img: {
+      widht: '9rem',
+      height: '9rem',
+    },
+  },
 })
 
 export const TemasContent = styled('div', {
-  maxWidth: '46rem',
+  width: '46rem',
   borderRadius: 20,
   boxShadow: '0px 0px 29px 0px rgba(0,0,0,0.75)',
+
+  '@media (max-width: 768px)': {
+    width: '100vw',
+  },
 })
 
 export const MolduraRec = styled('div', {
-  Width: '46rem',
   height: '1.7rem',
   background: 'linear-gradient(90deg, #77B0ED, #213989)',
   borderTopRightRadius: 20,
@@ -37,6 +60,10 @@ export const MolduraRec = styled('div', {
 export const TemasBox = styled('div', {
   padding: '3rem 2rem',
   margin: '0 auto',
+
+  '@media (max-width: 768px)': {
+    padding: '2rem 1rem',
+  },
 })
 
 export const BoxTitle = styled('div', {
@@ -48,6 +75,22 @@ export const BoxTitle = styled('div', {
 
   h1: {
     fontSize: '1.75rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.1rem',
+    },
+  },
+
+  '@media (max-width: 768px)': {
+    img: {
+      width: '2rem',
+      height: '2rem',
+    },
+
+    svg: {
+      width: '1rem',
+      height: '1rem',
+    },
   },
 })
 
@@ -55,6 +98,10 @@ export const Separator = styled('div', {
   width: '12rem',
   height: 2,
   background: '#BCBCC3',
+
+  '@media (max-width: 768px)': {
+    width: '1.5rem',
+  },
 })
 
 export const CheckContainer = styled('div', {

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { DepoimentosContainer } from './styles'
+import { DepoimentosContainer, ImageSecion } from './styles'
 import Depoimento1 from '../../../public/depoimento1.png'
 import Depoimento2 from '../../../public/depoimento2.png'
 import Depoimento3 from '../../../public/depoimento3.png'
@@ -18,6 +18,17 @@ export default function Depoimentos() {
     autoplaySpeed: 5000,
     speed: 900,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   } as Settings
 
   return (
@@ -25,13 +36,7 @@ export default function Depoimentos() {
       <DepoimentosContainer>
         <p>O que dizem sobre este guia...</p>
 
-        <div
-          style={{
-            boxShadow: 'inset 0px 0px 22px -3px rgba(0,0,0,0.75)',
-            borderRadius: 35,
-            padding: '.2rem .2rem 0 .2rem',
-          }}
-        >
+        <ImageSecion>
           <Slider {...settings}>
             <Image
               src={Depoimento1}
@@ -75,7 +80,7 @@ export default function Depoimentos() {
               priority={true}
             />
           </Slider>
-        </div>
+        </ImageSecion>
       </DepoimentosContainer>
     </>
   )

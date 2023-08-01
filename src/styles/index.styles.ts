@@ -12,40 +12,65 @@ export const MainContainer = styled('main', {
 export const Header = styled('header', {
   width: '100vw',
   background: 'linear-gradient(180deg, #557c93, #08203e)',
-  padding: '1.3rem 0',
 })
 
 export const HeaderContainer = styled('div', {
-  maxWidth: '900px',
+  maxWidth: 750,
   margin: '0 auto',
   color: '#fff',
   fontSize: '.7rem',
   textAlign: 'center',
   fontWeight: 'bold',
+  padding: '1.3rem 1rem',
+
+  '@media (max-width: 768px)': {
+    fontSize: '.6rem',
+    padding: '1rem',
+  },
 })
 
 export const Headline = styled('div', {
   backgroundSize: 'cover',
   width: '100vw',
   height: '32rem',
+
+  '@media (max-width: 768px)': {
+    height: '21rem',
+  },
 })
 
 export const HeadlineContainer = styled('div', {
-  maxWidth: '1120px',
+  maxWidth: '730px',
   margin: '0 auto',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '4rem',
   textAlign: 'center',
   color: '#fff',
+  padding: '4rem 1rem 0rem 1rem',
+
+  '@media (max-width: 768px)': {
+    padding: '2rem 1rem 0rem 1rem',
+    gap: '2rem',
+  },
 
   h1: {
     fontSize: '3rem',
     fontWeight: '700',
     lineHeight: '110%',
-    margin: '4rem 2rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.5rem',
+    },
   },
 
   p: {
     color: '#D0D0FF',
     fontSize: '1.25rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '.9rem',
+    },
   },
 })
 
@@ -53,6 +78,10 @@ export const SecondHeadline = styled('div', {
   width: '100vw',
   height: '31rem',
   background: '#EBEBEB',
+
+  '@media (max-width: 768px)': {
+    height: '23rem',
+  },
 })
 
 export const SecondHeadlineContainer = styled('div', {
@@ -63,10 +92,60 @@ export const SecondHeadlineContainer = styled('div', {
   fontSize: '1.25rem',
   fontWeight: '500',
   marginTop: '-8rem',
+
+  img: {
+    '@media (max-width: 768px)': {
+      width: '23rem',
+      height: '23rem',
+    },
+  },
+})
+
+export const MensageContainer = styled('div', {
+  width: '100vw',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+
+  variants: {
+    background: {
+      first: {
+        background: '#C0CD99',
+      },
+
+      scnd: {
+        background: '#C3C3C3',
+      },
+
+      thrd: {
+        background: '#60B0D9',
+      },
+
+      fhrt: {
+        background: '#262E61',
+      },
+
+      fifth: {
+        background: '#161528',
+      },
+
+      sixth: {
+        background: '#60B0D9',
+      },
+
+      seventh: {
+        background: '#FAFAFA',
+      },
+
+      eighth: {
+        background: '#EBEBEB',
+      },
+    },
+  },
 })
 
 export const Mensage = styled('div', {
-  width: '100vw',
+  maxWidth: 1120,
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -75,24 +154,41 @@ export const Mensage = styled('div', {
   fontWeight: 'bold',
 
   variants: {
-    color: {
-      frst: {
-        padding: '4rem 0 5rem',
-        background: '#C0CD99',
+    type: {
+      first: {
+        padding: '4rem 1rem 5rem 1rem',
         fontSize: '1.55rem',
         gap: '2.5rem',
+
+        '@media (max-width: 768px)': {
+          padding: '3rem 1rem',
+          fontSize: '.7em',
+          gap: '1rem',
+        },
       },
 
       scnd: {
-        padding: '5.75rem 0',
-        background: '#C3C3C3',
-        fontSize: '2.5rem',
-        gap: '4.2rem',
+        padding: '4rem 0',
+        fontSize: '2.4rem',
+        gap: '3rem',
+
+        '@media (max-width: 768px)': {
+          padding: '2rem 1rem',
+          fontSize: '.7em',
+          gap: '1rem',
+          textAlign: 'center',
+
+          img: {
+            '@media (max-width: 768px)': {
+              width: '20rem',
+              height: '2.5rem',
+            },
+          },
+        },
       },
 
       thrd: {
         padding: '5.75rem 0',
-        background: '#60B0D9',
         fontSize: '1.7rem',
         gap: '1.6rem',
 
@@ -101,27 +197,44 @@ export const Mensage = styled('div', {
           color: '#00FFF0',
           transition: 'all 300ms ease',
 
+          '@media (max-width: 768px)': {
+            fontSize: '3rem',
+          },
+
           '&:hover': {
             transform: 'scale(1.15)',
           },
+        },
+
+        '@media (max-width: 768px)': {
+          padding: '2rem 1rem',
+          fontSize: '.7rem',
+          gap: '1rem',
         },
       },
 
       fhrt: {
         padding: '3.5rem 0',
-        background: '#262E61',
         fontSize: '2.5rem',
+
+        '@media (max-width: 768px)': {
+          padding: '2rem 1rem',
+          fontSize: '.9rem',
+        },
       },
 
       fifth: {
         padding: '3.5rem 0',
-        background: '#161528',
         fontSize: '2.5rem',
+
+        '@media (max-width: 768px)': {
+          padding: '2rem 0',
+          fontSize: '1.1rem',
+        },
       },
 
       sixth: {
         padding: '3.5rem 0',
-        background: '#60B0D9',
         gap: '2rem',
 
         h1: {
@@ -136,7 +249,6 @@ export const Mensage = styled('div', {
       seventh: {
         color: '#000',
         padding: '3rem 0rem 4rem',
-        background: '#FAFAFA',
         gap: '2rem',
 
         h1: {
@@ -151,7 +263,6 @@ export const Mensage = styled('div', {
       eighth: {
         color: '#000',
         padding: '3rem 0 2rem',
-        background: '#EBEBEB',
         gap: '3rem',
 
         h1: {
@@ -163,7 +274,7 @@ export const Mensage = styled('div', {
 })
 
 export const GuiaContainer = styled('div', {
-  maxWidth: '1120px',
+  maxWidth: 1120,
   padding: '4rem 0',
   display: 'flex',
   flexDirection: 'column',
@@ -173,12 +284,43 @@ export const GuiaContainer = styled('div', {
   gap: '3.75rem',
   color: '#000',
 
+  '@media (max-width: 768px)': {
+    padding: '3rem 1rem',
+    gap: '2rem',
+  },
+})
+
+export const GuiaContent = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '3.75rem',
+
+  img: {
+    '@media (max-width: 768px)': {
+      width: '20rem',
+      height: '2.5rem',
+    },
+  },
+
   h1: {
     fontSize: '2.62rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1rem',
+    },
   },
 
   h3: {
     fontWeight: 'normal',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1rem',
+    },
+  },
+
+  '@media (max-width: 768px)': {
+    gap: '2rem',
   },
 })
 
@@ -186,6 +328,11 @@ export const BoxGuiaContainer = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '5rem',
+
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+    gap: '2.5rem',
+  },
 
   svg: {
     color: '#60B0D9',
@@ -199,8 +346,12 @@ export const BoxGuiaContainer = styled('div', {
 
 export const BoxGuia = styled('div', {
   maxWidth: '17rem',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
   border: '1px solid #cccccc',
-  padding: '1rem',
+  padding: '1.5rem 1rem',
   borderRadius: '20px',
   boxShadow: '10px 10px 10px 0px  #cccccc',
   transition: 'all 300ms ease',
@@ -222,18 +373,42 @@ export const BoxGuia = styled('div', {
 
 export const BonusContainer = styled('div', {
   maxWidth: 1120,
-  padding: '5rem 0',
+  padding: '5rem 1rem',
   gap: '9rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+
+  '@media (max-width: 768px)': {
+    padding: '3rem 1rem',
+    gap: '3rem',
+  },
 })
 
 export const BonusBox = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '2rem',
+
+  variants: {
+    type: {
+      normal: {
+        '@media (max-width: 768px)': {
+          flexDirection: 'column',
+        },
+      },
+      inverse: {
+        '@media (max-width: 768px)': {
+          flexDirection: 'column-reverse',
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    type: 'inverse',
+  },
 })
 
 export const BonusTitle = styled('div', {
@@ -244,7 +419,10 @@ export const BonusTitle = styled('div', {
     fontSize: '2.7rem',
     fontWeight: 600,
     lineHeight: '96%',
-    marginBottom: '1.5rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.7rem',
+    },
   },
 
   h2: {
@@ -254,8 +432,13 @@ export const BonusTitle = styled('div', {
 
   p: {
     lineHeight: '187%,',
-    marginBottom: '2.5rem',
   },
+})
+
+export const BonusDesc = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1.5rem',
 })
 
 export const BonusHeadline = styled('div', {
@@ -319,8 +502,14 @@ export const ImageComponent = styled('div', {
   borderRadius: 21,
   display: 'flex',
   justifyContent: 'space-between',
-  marginTop: '-7.5rem',
+  marginTop: '-6rem',
   transition: 'all 300ms ease',
+  zIndex: 1000,
+
+  '@media (max-width: 768px)': {
+    width: '22rem',
+    marginTop: '-4rem',
+  },
 
   '&:hover': {
     transform: 'scale(1.05)',
@@ -351,6 +540,15 @@ export const ImageContainer = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
+
+  img: {
+    borderRadius: 30,
+    transform: 'rotate(10deg)',
+    '@media (max-width: 768px)': {
+      width: '18rem',
+      height: '23rem',
+    },
+  },
 })
 
 export const RevisaoContainer = styled('div', {
@@ -361,12 +559,17 @@ export const RevisaoContainer = styled('div', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+
+  '@media (max-width: 768px)': {
+    padding: '2rem 1rem',
+    gap: '2rem',
+  },
 })
 
 export const RevisaoHeadline = styled('div', {
   background: '#FF0000',
   width: '56rem',
-  height: '6.25rem',
+  padding: '2.5rem 1rem',
   borderRadius: 20,
   fontWeight: 700,
   fontSize: 17,
@@ -380,11 +583,21 @@ export const RevisaoHeadline = styled('div', {
   '&:hover': {
     transform: 'scale(1.05)',
   },
+
+  '@media (max-width: 768px)': {
+    fontSize: '1rem',
+    width: '23rem',
+    padding: '2rem 1rem',
+  },
 })
 
 export const RevisaoImages = styled('div', {
   display: 'flex',
   gap: '2rem',
+
+  '@media (max-width: 768px)': {
+    flexDirection: 'column',
+  },
 
   img: {
     boxShadow: '30px 30px 36px 0px rgba(0, 0, 0, 0.25)',

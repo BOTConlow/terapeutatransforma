@@ -38,11 +38,16 @@ export const RevisaoHeadline = styled('div', {
   borderTopRightRadius: 35,
   borderTopLeftRadius: 35,
   padding: '2rem',
+  textAlign: 'center',
 
   h2: {
     fontSize: '2rem',
     color: '#fff',
     textShadow: '0px 2px 4px rgba(0, 0, 0, 0.31)',
+
+    '@media (max-width: 768px)': {
+      fontSize: '.9rem',
+    },
   },
 })
 
@@ -53,7 +58,12 @@ export const RevisaoContent = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   gap: '2rem',
-  padding: '3rem 0 4rem',
+  padding: '3rem 1rem 4rem 1rem',
+
+  '@media (max-width: 768px)': {
+    gap: '1.5rem',
+    padding: '2rem 1rem 3rem 1rem',
+  },
 
   h1: {
     fontSize: '3rem',
@@ -63,5 +73,9 @@ export const RevisaoContent = styled('div', {
   p: {
     fontSize: '2rem',
     textShadow: '0px 2px 4px rgba(0, 0, 0, 0.31)',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.5rem',
+    },
   },
 })
