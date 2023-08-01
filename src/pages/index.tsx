@@ -391,29 +391,32 @@ export default function Home() {
           <DescontoFunction />
         </RevisaoContainer>
 
-        <Mensage color={'sixth'}>
-          <Image src={Homem} alt="Logo" quality={100} />
-          <h1>Mas... e se eu não gostar?</h1>
-          <p>
-            O nível de satisfação com este livro é maior que 91%. Então as
-            chances de você ficar insatisfeito são
-            <br /> bem pequenas. Afinal esse livro já foi testado e aprovado por
-            mais de 50 mil profissionais.
-          </p>
-        </Mensage>
+        <MensageContainer background={'sixth'}>
+          <Mensage type={'sixth'}>
+            <Image src={Homem} alt="Logo" quality={100} />
+            <h1>Mas... e se eu não gostar?</h1>
+            <p>
+              O nível de satisfação com este livro é maior que 91%. Então as
+              chances de você ficar insatisfeito são bem pequenas. Afinal esse
+              livro já foi testado e aprovado por mais de 50 mil profissionais.
+            </p>
+          </Mensage>
+        </MensageContainer>
 
-        <Mensage color={'seventh'}>
-          <Image src={Garantia} alt="Selo Garantia" quality={100} />
-          <h1>Você não tem nada a perder!</h1>
-          <p>
-            Não se preocupe, compre agora e tenha direito de arrependimento em
-            até 30 dias. se o conteúdo descrito aqui não
-            <br /> for o mesmo que você receber, basta enviar um e-mail para
-            contato@terapeutatransforma.com.br dentro do período de garantia
-            <br /> e cancelamos sua compra, reembolsando 100% do valor pago sem
-            burocracias. Esse é o nosso compromisso com você!
-          </p>
-        </Mensage>
+        <MensageContainer background={'seventh'}>
+          <Mensage type={'seventh'}>
+            <Image src={Garantia} alt="Selo Garantia" quality={100} />
+            <h1>Você não tem nada a perder!</h1>
+            <p>
+              Não se preocupe, compre agora e tenha direito de arrependimento em
+              até 30 dias. se o conteúdo descrito aqui não for o mesmo que você
+              receber, basta enviar um e-mail para
+              contato@terapeutatransforma.com.br dentro do período de garantia e
+              cancelamos sua compra, reembolsando 100% do valor pago sem
+              burocracias. Esse é o nosso compromisso com você!
+            </p>
+          </Mensage>
+        </MensageContainer>
 
         <Mensage color={'eighth'}>
           <h1>Ficou alguma dúvida?</h1>

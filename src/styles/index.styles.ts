@@ -234,29 +234,64 @@ export const Mensage = styled('div', {
       },
 
       sixth: {
+        maxWidth: '50rem',
         padding: '3.5rem 0',
         gap: '2rem',
 
+        '@media (max-width: 768px)': {
+          padding: '2rem 1rem 3rem',
+          gap: '1rem',
+        },
+
         h1: {
           fontSize: '3rem',
+
+          '@media (max-width: 768px)': {
+            fontSize: '1.5rem',
+          },
         },
 
         p: {
           fontWeight: '500',
+
+          '@media (max-width: 768px)': {
+            fontSize: '.9rem',
+          },
         },
       },
 
       seventh: {
+        maxWidth: '66rem',
         color: '#000',
-        padding: '3rem 0rem 4rem',
+        padding: '3rem 1rem 4rem 1rem',
         gap: '2rem',
+
+        '@media (max-width: 768px)': {
+          padding: '2rem 1rem',
+          gap: '1rem',
+        },
 
         h1: {
           fontSize: '3rem',
+
+          '@media (max-width: 768px)': {
+            fontSize: '1.3rem',
+          },
         },
 
         p: {
           fontWeight: '500',
+
+          '@media (max-width: 768px)': {
+            fontSize: '.7rem',
+          },
+        },
+
+        img: {
+          '@media (max-width: 768px)': {
+            width: '15.8rem',
+            height: '12rem',
+          },
         },
       },
 
