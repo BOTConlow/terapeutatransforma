@@ -24,6 +24,7 @@ export const HeaderContainer = styled('div', {
   padding: '1.3rem 1rem',
 
   '@media (max-width: 768px)': {
+    maxWidth: '100%',
     fontSize: '.6rem',
     padding: '1rem',
   },
@@ -50,6 +51,7 @@ export const HeadlineContainer = styled('div', {
   padding: '4rem 1rem 0rem 1rem',
 
   '@media (max-width: 768px)': {
+    maxWidth: '100%',
     padding: '2rem 1rem 0rem 1rem',
     gap: '2rem',
   },
@@ -93,10 +95,15 @@ export const SecondHeadlineContainer = styled('div', {
   fontWeight: '500',
   marginTop: '-8rem',
 
+  '@media (max-width: 768px)': {
+    maxWidth: '100%',
+    padding: '1rem',
+  },
+
   img: {
     '@media (max-width: 768px)': {
-      width: '23rem',
-      height: '23rem',
+      width: '20rem',
+      height: '20rem',
     },
   },
 })
