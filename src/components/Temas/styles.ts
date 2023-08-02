@@ -10,8 +10,8 @@ export const TemasContainer = styled('div', {
   gap: '4rem',
 
   '@media (max-width: 768px)': {
-    padding: '3rem 1rem',
-    gap: '3rem',
+    padding: '2rem 1rem',
+    gap: '2rem',
   },
 })
 
@@ -30,9 +30,11 @@ export const SphereContent = styled('div', {
   },
 
   '@media (max-width: 768px)': {
+    gap: '1rem',
+
     img: {
-      widht: '9rem',
-      height: '9rem',
+      width: '100px',
+      height: '91px',
     },
   },
 })
@@ -77,7 +79,7 @@ export const BoxTitle = styled('div', {
     fontSize: '1.75rem',
 
     '@media (max-width: 768px)': {
-      fontSize: '1.1rem',
+      fontSize: '1.3rem',
     },
   },
 
@@ -88,8 +90,8 @@ export const BoxTitle = styled('div', {
     },
 
     svg: {
-      width: '1rem',
-      height: '1rem',
+      width: '1.2rem',
+      height: '1.2rem',
     },
   },
 })
@@ -100,7 +102,7 @@ export const Separator = styled('div', {
   background: '#BCBCC3',
 
   '@media (max-width: 768px)': {
-    width: '1.5rem',
+    display: 'none',
   },
 })
 

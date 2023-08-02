@@ -25,7 +25,7 @@ export const HeaderContainer = styled('div', {
 
   '@media (max-width: 768px)': {
     maxWidth: '100%',
-    fontSize: '.6rem',
+    fontSize: '.4rem',
     padding: '1rem',
   },
 })
@@ -161,7 +161,7 @@ export const Mensage = styled('div', {
   fontWeight: 'bold',
 
   '@media (max-width: 768px)': {
-    maxWidth: '100%',
+    width: '100%',
   },
 
   variants: {
@@ -185,7 +185,7 @@ export const Mensage = styled('div', {
 
         '@media (max-width: 768px)': {
           padding: '2rem 1rem',
-          fontSize: '.7em',
+          fontSize: '1.2rem',
           gap: '1rem',
           textAlign: 'center',
 
