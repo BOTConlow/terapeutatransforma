@@ -160,6 +160,10 @@ export const Mensage = styled('div', {
   textAlign: 'center',
   fontWeight: 'bold',
 
+  '@media (max-width: 768px)': {
+    maxWidth: '100%',
+  },
+
   variants: {
     type: {
       first: {
@@ -345,6 +349,7 @@ export const GuiaContainer = styled('div', {
   color: '#000',
 
   '@media (max-width: 768px)': {
+    maxWidth: '100%',
     padding: '3rem 1rem',
     gap: '2rem',
   },

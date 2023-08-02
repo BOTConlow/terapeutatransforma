@@ -10,6 +10,7 @@ import Slider, { Settings } from 'react-slick'
 
 export default function Depoimentos() {
   const settings = {
+    arrows: false,
     dots: true,
     infinite: true,
     slidesToShow: 3,
