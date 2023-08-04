@@ -12,7 +12,7 @@ import {
   RevisaoDesconto,
   RevisaoHeadline,
 } from './styles'
-import Button from '../Button'
+import BuyButton from '../BuyButton'
 
 const carousel: KeenSliderPlugin = (slider) => {
   const z = 220
@@ -114,7 +114,7 @@ export default function DescontoFunction() {
           </p>
           <h1>12x R$ 9,74</h1>
           <p>OU R$ 97,00 A VISTA</p>
-          <Button title="BAIXAR AGORA!" />
+          <BuyButton title="BAIXAR AGORA!" />
         </RevisaoContent>
       </RevisaoDesconto>
     </DescontoContainer>

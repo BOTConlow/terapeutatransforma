@@ -4,7 +4,7 @@ interface ButtonProps {
   title: string
 }
 
-export default function Button({ title }: ButtonProps) {
+export default function BuyButton({ title }: ButtonProps) {
   return (
     <>
       <ButtonContainer href="https://pay.kiwify.com.br/rcNH140">
