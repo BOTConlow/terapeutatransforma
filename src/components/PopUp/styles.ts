@@ -13,6 +13,7 @@ export const PopUpContainer = styled('div', {
   position: 'fixed',
   bottom: '1rem',
   transition: 'all 200ms ease',
+  zindex: 1000,
 
   variants: {
     open: {

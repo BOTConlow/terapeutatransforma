@@ -1,0 +1,39 @@
+.imagescontain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagescontain img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.scene {
+  width: 301px;
+  height: 426px;
+  perspective: 1000px;
+  position: relative;
+}
+.scene .carousel.keen-slider {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  position: absolute;
+  transform: translateZ(-288px);
+  transform-style: preserve-3d;
+}
+.carousel__cell {
+  position: absolute;
+  width: 301px;
+  left: 10px;
+  height: 426px;
+}

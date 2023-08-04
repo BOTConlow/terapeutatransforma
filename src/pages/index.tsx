@@ -10,6 +10,7 @@ import {
   BonusTitle,
   BoxGuia,
   BoxGuiaContainer,
+  ComponentItem,
   FaqboxContainer,
   FaqboxContent,
   GuiaContainer,
@@ -27,7 +28,6 @@ import {
   MensageContainer,
   RevisaoContainer,
   RevisaoHeadline,
-  RevisaoImages,
   SecondHeadline,
   SecondHeadlineContainer,
   Separator2,
@@ -36,9 +36,9 @@ import Backgound1 from '../../public/Background1.svg'
 import Ipad from '../../public/Ipad.webp'
 import ColumbiaImg from '../../public/columbia1.webp'
 import ColumbiaImg2 from '../../public/columbia2.webp'
-import Capa120 from '../../public/capa120.webp'
-import Capa10 from '../../public/capa10.webp'
-import Iphone from '../../public/iphone.png'
+import Capa120 from '../../public/capa120.png'
+import Capa10 from '../../public/capa10.png'
+import CapaInt from '../../public/capainter.png'
 import Garantia from '../../public/garantia.webp'
 import Logo1 from '../../public/logo1.svg'
 import Logo2 from '../../public/logo2.svg'
@@ -221,7 +221,7 @@ export default function Home() {
             <BonusTitle>
               <BonusHeadline type={'frst'}>
                 <Separator2 type={'frst'} color={'frst'} />
-                <h2>MANFAAT BUKU</h2>
+                <h2>TERAPEUTA TRASNSFORMA</h2>
               </BonusHeadline>
               <BonusDesc>
                 <h1>120 Perguntas Para Crianças e Adolescentes</h1>
@@ -244,24 +244,24 @@ export default function Home() {
               <Image src={Capa120} alt="Logo" quality={100} />
 
               <ImageComponent color={'frst'}>
-                <div>
+                <ComponentItem>
                   <h1>19</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
 
-                <div>
+                <ComponentItem>
                   <h1>253</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
 
-                <div>
+                <ComponentItem>
                   <h1>60</h1>
                   <p>Hari Menulis</p>
-                </div>
+                </ComponentItem>
               </ImageComponent>
             </ImageContainer>
           </BonusBox>
@@ -271,31 +271,31 @@ export default function Home() {
               <Image src={Capa10} alt="Logo" quality={100} />
 
               <ImageComponent color={'scnd'}>
-                <div>
+                <ComponentItem>
                   <h1>19</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
 
-                <div>
+                <ComponentItem>
                   <h1>253</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
 
-                <div>
+                <ComponentItem>
                   <h1>60</h1>
                   <p>Hari Menulis</p>
-                </div>
+                </ComponentItem>
               </ImageComponent>
             </ImageContainer>
 
             <BonusTitle>
               <BonusHeadline type={'scnd'}>
                 <Separator2 type={'frst'} color={'scnd'} />
-                <h2>MANFAAT BUKU</h2>
+                <h2>TERAPEUTA TRASNSFORMA</h2>
               </BonusHeadline>
 
               <BonusDesc>
@@ -322,11 +322,11 @@ export default function Home() {
             <BonusTitle>
               <BonusHeadline type={'thrd'}>
                 <Separator2 type={'frst'} color={'thrd'} />
-                <h2>MANFAAT BUKU</h2>
+                <h2>TERAPEUTA TRASNSFORMA</h2>
               </BonusHeadline>
 
               <BonusDesc>
-                <h1>Guia De Interpretação Das Respostas</h1>
+                <h1>Kit Guia De Interpretação Das Respostas</h1>
                 <p>
                   Acesse 120 perguntas inovadoras e eficientes com o objetivo de
                   estimular o diálogo com os adolescentes, proporcionando um
@@ -343,26 +343,27 @@ export default function Home() {
             </BonusTitle>
 
             <ImageContainer>
-              <Image src={Capa120} alt="Logo" quality={100} />
+              <Image src={CapaInt} alt="Logo" quality={100} />
 
               <ImageComponent color={'thrd'}>
-                <div>
+                <ComponentItem>
                   <h1>19</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
 
-                <div>
+                <ComponentItem>
                   <h1>253</h1>
                   <p>Juhlah Chapter</p>
-                </div>
+                </ComponentItem>
 
                 <Separator2 type={'scnd'} />
-                <div>
+
+                <ComponentItem>
                   <h1>60</h1>
                   <p>Hari Menulis</p>
-                </div>
+                </ComponentItem>
               </ImageComponent>
             </ImageContainer>
           </BonusBox>
@@ -384,10 +385,6 @@ export default function Home() {
               {currentFormatted} você terá um DESCONTO de 62% + BÔNUS EXCLUSIVOS
             </p>
           </RevisaoHeadline>
-          <RevisaoImages>
-            <Image src={Iphone} alt="Logo" quality={100} />
-          </RevisaoImages>
-
           <DescontoFunction />
         </RevisaoContainer>
 

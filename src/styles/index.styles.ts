@@ -439,7 +439,7 @@ export const BoxGuia = styled('div', {
 export const BonusContainer = styled('div', {
   maxWidth: 1120,
   padding: '5rem 1rem',
-  gap: '9rem',
+  gap: '5rem',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -478,7 +478,12 @@ export const BonusBox = styled('div', {
 
 export const BonusTitle = styled('div', {
   color: '#272D3E',
-  gap: '1rem',
+})
+
+export const BonusDesc = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1.5rem',
 
   h1: {
     fontSize: '2.7rem',
@@ -490,20 +495,9 @@ export const BonusTitle = styled('div', {
     },
   },
 
-  h2: {
-    letterSpacing: 1.4,
-    fontSize: '.8rem',
-  },
-
   p: {
     lineHeight: '187%,',
   },
-})
-
-export const BonusDesc = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1.5rem',
 })
 
 export const BonusHeadline = styled('div', {
@@ -511,6 +505,11 @@ export const BonusHeadline = styled('div', {
   alignItems: 'center',
   gap: '1rem',
   marginBottom: '.8rem',
+
+  h2: {
+    letterSpacing: 3.4,
+    fontSize: '.8rem',
+  },
 
   variants: {
     type: {
@@ -562,14 +561,14 @@ export const Separator2 = styled('div', {
 })
 
 export const ImageComponent = styled('div', {
-  width: '37rem',
+  width: '27rem',
   padding: '2rem',
   borderRadius: 21,
   display: 'flex',
   justifyContent: 'space-between',
   marginTop: '-6rem',
   transition: 'all 300ms ease',
-  zIndex: 1000,
+  zIndex: 999,
 
   '@media (max-width: 768px)': {
     width: '22rem',
@@ -616,6 +615,17 @@ export const ImageContainer = styled('div', {
   },
 })
 
+export const ComponentItem = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  p: {
+    fontSize: '.8rem',
+  },
+})
+
 export const RevisaoContainer = styled('div', {
   maxWidth: 1120,
   padding: '5rem 0',
@@ -653,26 +663,6 @@ export const RevisaoHeadline = styled('div', {
     fontSize: '1rem',
     width: '100%',
     padding: '2rem 1rem',
-  },
-})
-
-export const RevisaoImages = styled('div', {
-  display: 'flex',
-  gap: '2rem',
-
-  '@media (max-width: 768px)': {
-    flexDirection: 'column',
-  },
-
-  img: {
-    boxShadow: '30px 30px 36px 0px rgba(0, 0, 0, 0.25)',
-    background: '#ccc',
-    borderRadius: 40,
-    transition: 'all 300ms ease',
-
-    '&:hover': {
-      transform: 'scale(1.05)',
-    },
   },
 })
 
