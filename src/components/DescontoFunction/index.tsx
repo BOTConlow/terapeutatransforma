@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Button from '../Button'
 import CheckTeste from '../check'
 import { useKeenSlider, KeenSliderPlugin } from 'keen-slider/react'
 import Capa4 from '../../../public/capa120.png'
@@ -13,6 +12,7 @@ import {
   RevisaoDesconto,
   RevisaoHeadline,
 } from './styles'
+import Button from '../Button'
 
 const carousel: KeenSliderPlugin = (slider) => {
   const z = 220
