@@ -44,13 +44,17 @@ export const RevisaoHeadline = styled('div', {
   padding: '2rem',
   textAlign: 'center',
 
+  '@media (max-width: 768px)': {
+    padding: '1.5rem',
+  },
+
   h2: {
     fontSize: '2rem',
     color: '#fff',
     textShadow: '0px 2px 4px rgba(0, 0, 0, 0.31)',
 
     '@media (max-width: 768px)': {
-      fontSize: '.9rem',
+      fontSize: '1.5rem',
     },
   },
 })

@@ -3,7 +3,6 @@ import { styled } from '../../styles/stitches.config'
 export const DepoimentosContainer = styled('div', {
   maxWidth: 1120,
   color: '#000',
-  fontSize: '2rem',
   fontWeight: 'bold',
   textAlign: 'center',
 
@@ -12,11 +11,16 @@ export const DepoimentosContainer = styled('div', {
   '@media (max-width: 768px)': {
     maxWidth: '100%',
     padding: '2rem 1rem',
-    fontSize: '1.1rem',
   },
 
-  p: {
-    marginBottom: '2rem',
+  h1: {
+    fontSize: '3rem',
+    marginBottom: '3rem',
+
+    '@media (max-width: 768px)': {
+      fontSize: '1.4rem',
+      marginBottom: '2rem',
+    },
   },
 })
 

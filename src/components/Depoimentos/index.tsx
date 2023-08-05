@@ -35,7 +35,7 @@ export default function Depoimentos() {
   return (
     <>
       <DepoimentosContainer>
-        <p>O que dizem sobre este guia...</p>
+        <h1>O que dizem sobre este guia...</h1>
 
         <ImageSecion>
           <Slider {...settings}>

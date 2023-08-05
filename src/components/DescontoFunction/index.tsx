@@ -15,7 +15,7 @@ import {
 import BuyButton from '../BuyButton'
 
 const carousel: KeenSliderPlugin = (slider) => {
-  const z = 220
+  const z = 180
   function rotate() {
     const deg = 360 * slider.track.details.progress
     slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`

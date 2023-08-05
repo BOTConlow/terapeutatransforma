@@ -53,7 +53,7 @@ export const HeadlineContainer = styled('div', {
   '@media (max-width: 768px)': {
     maxWidth: '100%',
     padding: '2rem 1rem 0rem 1rem',
-    gap: '2rem',
+    gap: '1.5rem',
   },
 
   h1: {
@@ -82,7 +82,7 @@ export const SecondHeadline = styled('div', {
   background: '#EBEBEB',
 
   '@media (max-width: 768px)': {
-    height: '23rem',
+    height: '12rem',
   },
 })
 
@@ -98,12 +98,13 @@ export const SecondHeadlineContainer = styled('div', {
   '@media (max-width: 768px)': {
     maxWidth: '100%',
     padding: '1rem',
+    marginTop: '-10rem',
   },
 
   img: {
     '@media (max-width: 768px)': {
       width: '20rem',
-      height: '20rem',
+      height: '13rem',
     },
   },
 })
@@ -300,8 +301,8 @@ export const Mensage = styled('div', {
 
         img: {
           '@media (max-width: 768px)': {
-            width: '15.8rem',
-            height: '12rem',
+            width: '16rem',
+            height: '10rem',
           },
         },
       },
@@ -662,7 +663,7 @@ export const RevisaoHeadline = styled('div', {
   '@media (max-width: 768px)': {
     fontSize: '1rem',
     width: '100%',
-    padding: '2rem 1rem',
+    padding: '1rem',
   },
 })
 

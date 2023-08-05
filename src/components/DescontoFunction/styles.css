@@ -23,6 +23,7 @@
   perspective: 1000px;
   position: relative;
 }
+
 .scene .carousel.keen-slider {
   width: 100%;
   height: 100%;
@@ -36,4 +37,18 @@
   width: 301px;
   left: 10px;
   height: 426px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .carousel__cell {
+    width: 210px;
+    height: 300px;
+  }
+
+  .scene {
+    width: 210px;
+    height: 300px;
+  }
+
 }
