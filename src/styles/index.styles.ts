@@ -25,7 +25,7 @@ export const HeaderContainer = styled('div', {
 
   '@media (max-width: 768px)': {
     maxWidth: '100%',
-    fontSize: '.4rem',
+    fontSize: '.39rem',
     padding: '1rem',
   },
 })
@@ -103,8 +103,8 @@ export const SecondHeadlineContainer = styled('div', {
 
   img: {
     '@media (max-width: 768px)': {
-      width: '20rem',
-      height: '13rem',
+      width: '22rem',
+      height: '15rem',
     },
   },
 })
@@ -572,8 +572,10 @@ export const ImageComponent = styled('div', {
   zIndex: 999,
 
   '@media (max-width: 768px)': {
-    width: '22rem',
+    width: '19rem',
     marginTop: '-4rem',
+    padding: '1rem',
+    justifyContent: 'space-around',
   },
 
   '&:hover': {
@@ -610,8 +612,8 @@ export const ImageContainer = styled('div', {
     borderRadius: 30,
     transform: 'rotate(10deg)',
     '@media (max-width: 768px)': {
-      width: '18rem',
-      height: '23rem',
+      width: '210px',
+      height: '300px',
     },
   },
 })
@@ -622,8 +624,20 @@ export const ComponentItem = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
 
+  h1: {
+    '@media (max-width: 768px)': {
+      fontSize: '1rem',
+    },
+  },
+
   p: {
     fontSize: '.8rem',
+    textAlign: 'center',
+
+    '@media (max-width: 768px)': {
+      fontSize: '.8rem',
+      maxWidth: '2rem',
+    },
   },
 })
 
