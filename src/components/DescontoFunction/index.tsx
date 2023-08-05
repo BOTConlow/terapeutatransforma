@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import CheckTeste from '../check'
 import { useKeenSlider, KeenSliderPlugin } from 'keen-slider/react'
-import Capa4 from '../../../public/capa120.png'
-import Capa3 from '../../../public/capa10.png'
-import Capa2 from '../../../public/capainter.png'
-import Capa1 from '../../../public/capa512.png'
+import Capa4 from '../../../public/capa120.webp'
+import Capa3 from '../../../public/capa10.webp'
+import Capa2 from '../../../public/capainter.webp'
+import Capa1 from '../../../public/capa512.webp'
 import {
   BoxCheck,
   DescontoContainer,
