@@ -87,37 +87,3 @@ export const RevisaoContent = styled('div', {
     },
   },
 })
-
-export const Wrapper = styled('div', {
-  display: 'flex',
-  justifyContent: 'center',
-})
-
-export const Scene = styled('div', {
-  width: 260,
-  height: 200,
-  perspective: 1000,
-  position: 'relative',
-})
-
-export const CarouselKeenSlider = styled('div', {
-  width: '100%',
-  height: '100%',
-  overflow: 'visible',
-  position: 'absolute',
-  transform: 'translateZ(-288px)',
-  transformStyle: 'preserve-3d',
-})
-
-export const Carouselcell = styled('div', {
-  position: 'absolute',
-  width: 240,
-  left: 10,
-  height: 200,
-  border: '1px solid rgba(0, 0, 0, 0.3)',
-
-  img: {
-    width: '100%',
-    height: '100%',
-  },
-})
