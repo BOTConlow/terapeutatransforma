@@ -33,8 +33,8 @@ export const SphereContent = styled('div', {
     gap: '1rem',
 
     img: {
-      width: '100px',
-      height: '91px',
+      width: '110px',
+      height: '101px',
     },
   },
 })

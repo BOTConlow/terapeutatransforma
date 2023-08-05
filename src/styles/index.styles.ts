@@ -82,7 +82,7 @@ export const SecondHeadline = styled('div', {
   background: '#EBEBEB',
 
   '@media (max-width: 768px)': {
-    height: '12rem',
+    height: '13rem',
   },
 })
 
@@ -220,7 +220,7 @@ export const Mensage = styled('div', {
 
         '@media (max-width: 768px)': {
           padding: '2rem 1rem',
-          fontSize: '.7rem',
+          fontSize: '1rem',
           gap: '1rem',
         },
       },
